@@ -1,0 +1,11 @@
+#ignore the gulp folder
+node_modules/*
+
+#ignore the other gulp bits
+gulpfile.js
+package.json
+
+.DS_Store
+
+#ignore spurious CSS files
+style_variables_and_mixins.css
