@@ -6,14 +6,15 @@
 
 
 /* 1. VARIABLES          */
-
+$box_underline_thickness: 5px;
 
 /* 2. COLOURS            */
-$main_text_colour: #929292;
+$main_text_colour: #041214;
+$opcan_borders: #e0e1e2;
 
-$dark_highlight_colour: #818181;
-$orange_highlight_colour: #b68253;
-$light_orange_background_colour: #dbccba;
+$opcan_blue: #1E8CA0;
+$opcan_purple: #731EA0;
+$opcan_red: #A0321E;
 
 
 /* 3. MIXINS             */

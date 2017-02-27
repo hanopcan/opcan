@@ -35,7 +35,10 @@
 
 
 /* 0. BASIC STYLING     */
-
+body {
+    color: $main_text_colour;
+    background-color: #d9d9d9;
+}
 
 
 
@@ -45,6 +48,9 @@
 
 
 /* 2. HEADER            */
+.site-branding {
+    //margin-left: 15%;
+}
 
 
 /* 3. NAVIGATION        */
@@ -57,6 +63,49 @@
 
 
 /* 5.1 HOME                 */
+.home {
+    .entry-title {
+        display: none;
+    }
+    &.no-sidebar .entry-content {
+        margin-left: 0;
+        margin-right: 0;
+        @include top_and_center();
+        .image {
+            margin-right: 50px;
+        }
+        .text {
+            margin-left: 10px;
+        }
+        ul {
+            @include top_and_center(); 
+            align-items: stretch; 
+            list-style-type: none;
+            li {
+                width: 33%;
+                padding: 10px;
+                margin-right: 25px;
+                &.web {
+                    border-bottom: $box_underline_thickness solid $opcan_blue;
+                }
+                &.mgt {
+                    border-bottom: $box_underline_thickness solid $opcan_red;
+                }
+                &.analysis {
+                    border-bottom: $box_underline_thickness solid $opcan_purple;
+                }
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+        ul.borders {
+            li {
+                box-shadow: 2px 2px 2px 2px $opcan_borders;
+            }
+        }
+    }
+}
 
 
 
