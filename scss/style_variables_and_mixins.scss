@@ -1,0 +1,112 @@
+/* 1. VARIABLES            */
+/* 2. COLOURS              */
+/* 3. MIXINS               */
+/* 4. FLEX BOX LAYOUTS     */
+
+
+
+/* 1. VARIABLES          */
+
+
+/* 2. COLOURS            */
+$main_text_colour: #929292;
+
+$dark_highlight_colour: #818181;
+$orange_highlight_colour: #b68253;
+$light_orange_background_colour: #dbccba;
+
+
+/* 3. MIXINS             */
+
+
+
+/* 4. FLEX BOX LAYOUTS   */
+//row layout, all content is central - vertically and horizontally - laid out
+@mixin align_vertical_and_center() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;    
+    display: flex; 
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;  
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;    
+    align-items: center;
+}
+
+
+//row layout, content is centered but aligned to the top of the container
+@mixin top_and_center() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;    
+    display: flex; 
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;    
+    align-items: flex-start;
+}
+
+//lays out flex lines vertically, one above another
+@mixin column_direction () {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+//lays out flex lines horizontally, on the same row as each other
+@mixin row_direction () {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+//column layout, content is centrally justified but aligned to the bottom of the container
+@mixin columns_and_center() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;    
+    display: flex; 
+
+    -webkit-box-direction: horizontal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;  
+    -webkit-justify-content: flex-end;  
+    justify-content: flex-end;  
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;    
+    align-items: center;
+}
+
+@mixin change_flexbox_order($order) {
+    -webkit-box-ordinal-group: $order;
+    -ms-flex-order: $order;
+    -webkit-order: $order;
+    order: $order;           
+}  
+
+@mixin align_center() {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;    
+    align-items: center;    
+}
