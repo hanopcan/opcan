@@ -34,12 +34,25 @@
 @import "style_variables_and_mixins.scss";
 
 
+
 /* 0. BASIC STYLING     */
 body {
     color: $main_text_colour;
     background-color: #d9d9d9;
-}
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
 
+}
+h1, h2, h3 {
+    font-weight: 300;
+}
+li {
+    margin-left: 1.75em;
+}
+.dashicons, .dashicons-before::before {
+    margin-top: 6px;
+}
 
 
 /* 1. LAYOUT       */
@@ -75,16 +88,24 @@ body {
             margin-right: 50px;
         }
         .text {
-            margin-left: 10px;
         }
-        ul {
-            @include top_and_center(); 
-            align-items: stretch; 
+        ul.borders {
+            @include stretch_and_center(); 
             list-style-type: none;
             li {
                 width: 33%;
                 padding: 10px;
+                margin-left: 0;
                 margin-right: 25px;
+                box-shadow: 2px 2px 2px 2px $opcan_borders;
+                @include top_and_center();
+                @include column_direction ();
+                h2 {
+                    flex: 4;
+                }
+                .more-link {
+                    color: $lighter_main_text_colour;
+                }                
                 &.web {
                     border-bottom: $box_underline_thickness solid $opcan_blue;
                 }
@@ -99,10 +120,9 @@ body {
                 margin-right: 0;
             }
         }
-        ul.borders {
-            li {
-                box-shadow: 2px 2px 2px 2px $opcan_borders;
-            }
+
+        #web_details, #mgt_details, #analytics_details {
+            display: none;
         }
     }
 }

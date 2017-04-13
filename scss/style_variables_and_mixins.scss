@@ -10,6 +10,7 @@ $box_underline_thickness: 5px;
 
 /* 2. COLOURS            */
 $main_text_colour: #041214;
+$lighter_main_text_colour: lighten($main_text_colour, 20%);
 $opcan_borders: #e0e1e2;
 
 $opcan_blue: #1E8CA0;
@@ -52,6 +53,42 @@ $opcan_red: #A0321E;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;    
+    align-items: flex-start;
+}
+
+//row layout, content is centered but aligned to the top of the container
+@mixin stretch_and_center() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;    
+    display: flex; 
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;    
+    align-items: stretch;
+}
+
+//row layout, content is centered but aligned to the bottom of the container
+@mixin bottom_and_center() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;    
+    display: flex; 
+
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 
     -webkit-box-align: start;
     -ms-flex-align: start;
