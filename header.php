@@ -28,6 +28,9 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
+
+	<!--Add Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 	
 </head>
 
 <body <?php body_class(); ?>>
