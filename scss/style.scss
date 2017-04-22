@@ -14,19 +14,21 @@
 
 /* VARIABLES     */
 
-/* 0. BASIC STYLING         */
-/* 0.1 ACTION BOX           */
-/* 0.2 DASHICONS            */
-/* 0.3 QUOTE                */
-/* 0.4 TESTIMONIALS         */
+/* 0.  BASIC STYLING        */
+/* 0A. BUTTONS              */
 
 /* 1. LAYOUT                */
 /* 2. HEADER                */
 /* 3. NAVIGATION            */
-/* 4. TEMPLATES             */
 
-/* 5. PAGES  and POSTS      */
-/* 5.1 HOME                 */
+/* 4. PAGES AND POSTS aka CONTENT  */ 
+
+/* 5. TEMPLATES and SPECIFIC PAGES   */
+/* 5.1 IMAGE-FIRST TEMPLATE          */
+/* 5.2 HOME                          */
+
+/* 6. SLIDERS                        */
+/* 6.1. TESTIMONIALS                 */
 
 /* 7. FOOTER                */
 
@@ -36,84 +38,230 @@
 
 
 /* 0. BASIC STYLING     */
+html {
+    background-color: $opcan_offwhite;
+}
+
 body {
     color: $main_text_colour;
     background-color: #d9d9d9;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+}
+.site {
+    background-color: $opcan_offwhite;
+}
 
-}
-h1, h2, h3 {
+h1, h2, h3, .entry-content h1, .entry-content h2, .entry-content h3 {
     font-weight: 300;
+    color: $opcan_green;
+    font-family: 'Raleway', sans-serif;
 }
+
 li {
     margin-left: 1.75em;
 }
 .dashicons, .dashicons-before::before {
     margin-top: 6px;
 }
+.big-top-gap {
+    margin-top: 50px;
+}
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*0A. BUTTONS      */
+@include button_styling();
 
 
 /* 1. LAYOUT       */
-
-
-
-
-/* 2. HEADER            */
-.site-branding {
-    //margin-left: 15%;
+body:not(.custom-background-image)::before, body:not(.custom-background-image)::after {
+    height: 0;
+}
+.site {
+    margin: 0;
+}
+.site-inner {
+    max-width: none;
+    max-width: unset;
+}
+.site-header-main, #content  {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 4.5455%;
+}
+//place the navigation where we want it
+.site-header-menu {
+    width: 100%;
+    .menu-main-menu-container {
+        @include align_vertical_and_center();
+        margin-top: 7px;
+    }
+}
+#content {
+    margin-top: 125px;
 }
 
 
+/* 2. HEADER            */
+#masthead {
+    padding: 0 4.5455%;
+    border-bottom: 3px solid white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background: url('img/Han_says_hello.png') no-repeat 15px center;
+    background-size: 150px;
+    background-color: $opcan_green;    
+    height: 125px;      
+}
+.site-header-main {
+
+}
+.site-branding {
+    margin: 15px 15% 0;
+    @include align_vertical_and_center();
+    @include column_direction();
+    width: 100%;
+    font-family: 'Raleway', sans-serif;    
+    .site-title a {
+        color: white;
+        font-size: 1.3em;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: 'Raleway', sans-serif;    
+        text-transform: uppercase;
+    }
+    .site-description {
+        font-size: 0.9em;
+        color: black;
+        font-weight: 400;
+        margin-top: 0;
+    }
+}
+
+
+
 /* 3. NAVIGATION        */
+.site-header-menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    //background-color: $opcan_green;
+}
+.main-navigation a, .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;  
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+.main-navigation a {
+    font-weight: 300;
+    box-sizing: border-box;
+    &:hover {
+        //border-bottom: 2px solid $opcan_red;
+        //color: white;
+        //text-decoration: underline;
+    }
+}
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
+    font-weight: 500;
+}
 
 
-/* 4. TEMPLATES         */
 
 
-/* 5. PAGES AND POSTS       */  
 
 
-/* 5.1 HOME                 */
+/* 4. PAGES AND POSTS aka CONTENT    */ 
+ .hentry {
+     margin-top: 100px;
+     .entry-title {
+        font-family: 'Raleway', sans-serif;      
+        color: $opcan_green;    
+     }
+ }
+
+/* 5. TEMPLATES and SPECIFIC PAGES   */                 
+
+/* 5.1 IMAGE-FIRST TEMPLATE          */
+.image-first {
+    .hentry {
+        margin-top: 0;
+    }
+    &.content_end {
+        background-color: $opcan_green;
+        width: 100%;
+        //padding: 50px 0;
+        letter-spacing: 2px;
+    }
+}
+
+/* 5.2 HOME                          */
 .home {
     .entry-title {
         display: none;
     }
     &.no-sidebar .entry-content {
-        margin-left: 0;
-        margin-right: 0;
-        @include top_and_center();
+        margin: 0;
         .image {
             margin-right: 50px;
         }
         .text {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .forest-image {
+            background: url('img/forest.jpg') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            padding: 100px 250px;
+            letter-spacing: 2px;
+            line-height: 50px;
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            font-weight: 300;
         }
         ul.borders {
             @include stretch_and_center(); 
             list-style-type: none;
             li {
                 width: 33%;
-                padding: 10px;
-                margin-left: 0;
-                margin-right: 25px;
-                box-shadow: 2px 2px 2px 2px $opcan_borders;
+                padding: 25px 20px;
+                margin: 0 25px 0 0;
+                box-shadow: 7px 7px 0px 0px $opcan_green;
                 @include top_and_center();
                 @include column_direction ();
+                //border-radius: 10px;
+                box-sizing: border-box;
+                background-color: white;
+                //transform: rotate(1deg);
                 h2 {
                     flex: 4;
+                    font-size: 1.3em;
+                    color: $opcan_green;
+                    border-left: none;
+                    padding-left: 0;
                 }
                 .more-link {
-                    color: $lighter_main_text_colour;
+                    color: $background_colour;
                 }                
-                &.web {
-                    border-bottom: $box_underline_thickness solid $opcan_blue;
+                &.web, &.mgt, &.analysis {
+                    border: 1px solid $opcan_borders;
                 }
-                &.mgt {
-                    border-bottom: $box_underline_thickness solid $opcan_red;
+            }
+            li:hover {
+                .more-link {
+                    text-decoration: underline;
                 }
-                &.analysis {
-                    border-bottom: $box_underline_thickness solid $opcan_purple;
+                .dashicons, .dashicons-before::before {
+                    text-decoration: none;
                 }
             }
             li:last-child {
@@ -123,6 +271,11 @@ li {
 
         #web_details, #mgt_details, #analytics_details {
             display: none;
+            border-radius: 10px;
+            //box-shadow: 7px 7px 0px 0px $opcan_green;
+            background-color: white;
+            //border: 2px solid $main_text_colour;
+            padding: 25px 25px 5px 25px;
         }
     }
 }
@@ -130,8 +283,82 @@ li {
 
 
 /* 7. FOOTER                */
+.site-footer {
+    @include top_and_center();
+    @include column_direction ();
+    background-color: $background_colour;
+    color: white;
+    padding: 0;
+}
+.footer_container {
+    max-width: 1320px;
+    padding: 50px 15%;
+    margin: 25px auto 0;
+    @include align_vertical_and_center();
+    h2, h3 {
+        color: white;
+    }
+    .image {
+        margin-right: 50px;
+        img {
+            width: 300px;
+            padding: 10px;
+        }
+    }
+    .text {
+        text-align: center;          
+        h2 {
+            margin-bottom: 0px;
+        }
+        p {
+            margin-top: 25px;
+            margin-bottom: 0;
+            display: inline;
+        }
+        .icons {
+            @include align_vertical_and_center(); 
+            p {
+                margin: 0 10px;
+            }
+        }
+        .twitter {
+            width: 40px;
+        }
+        .linkedIn {
+            width: 40px;
+        }
+        .dashicons {
+            width: 40px;
+            height: 40px;
+        }
+        .dashicons-email-alt::before {
+            font-size: 40px;
+            margin-top: 0;
+        }
+        a {
+            color: white;
+        }
+    }
+}
+.site-info {
+    margin: 0.538461538em auto;
+    a {
+        color: white;
+    }
+}
+.no-flex {
+    display: block;
+}
 
+/* 6. SLIDERS                        */
+.soliloquy-outer-container {
+    margin-top: 50px;
+}
 
+/* 6.1. TESTIMONIALS                 */
+.testimonial-slider {
+
+}
 
 
 /* 20. MEDIA QUERIES     */

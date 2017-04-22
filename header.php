@@ -30,7 +30,7 @@
 	<?php wp_head(); ?>
 
 	<!--Add Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 	
+	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400i,500" rel="stylesheet"> 
 </head>
 
 <body <?php body_class(); ?>>
