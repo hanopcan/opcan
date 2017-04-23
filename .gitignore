@@ -9,3 +9,4 @@ package.json
 
 #ignore spurious CSS files
 style_variables_and_mixins.css
+media_queries.css

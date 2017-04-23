@@ -119,13 +119,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     width: 100%;
     top: 0;
     z-index: 2;
-    background: url('img/Han_says_hello.png') no-repeat 15px center;
+    background: url('img/Han_says_hello.png') no-repeat 15px 5px;
     background-size: 150px;
     background-color: $opcan_green;    
     height: 125px;      
 }
 .site-header-main {
-
+    @include justify-content-end();
 }
 .site-branding {
     margin: 15px 15% 0;
@@ -177,6 +177,11 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     font-weight: 500;
 }
 
+/* 3.1. HAMBURGER NAV        */
+#menu-toggle {
+    margin-top: -25px;
+    margin-bottom: 0;
+}
 
 
 
@@ -194,15 +199,31 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 /* 5. TEMPLATES and SPECIFIC PAGES   */                 
 
 /* 5.1 IMAGE-FIRST TEMPLATE          */
-.image-first {
-    .hentry {
-        margin-top: 0;
-    }
-    &.content_end {
-        background-color: $opcan_green;
-        width: 100%;
-        //padding: 50px 0;
-        letter-spacing: 2px;
+//set on the body tag
+.page-template-page-imagefirst {
+
+    /* 1. layout    */ 
+    #content  {
+        padding: 0;
+    }    
+
+    .image-first {
+        .hentry {
+            margin-top: 0;
+        }
+        &.no-sidebar .entry-content {
+
+        }
+        .text {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        &.content_end {
+            background-color: $opcan_green;
+            width: 100%;
+            //padding: 50px 0;
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -216,17 +237,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
         .image {
             margin-right: 50px;
         }
-        .text {
-            margin-left: 15%;
-            margin-right: 15%;
-        }
         .forest-image {
             background: url('img/forest.jpg') no-repeat center center;
             background-size: cover;
             height: 500px;
-            padding: 100px 250px;
+            padding: 100px 325px;
             letter-spacing: 2px;
-            line-height: 50px;
+            line-height: 1.7em;
             font-size: 2em;
             text-align: center;
             color: white;
@@ -366,3 +383,4 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
 
 /* 20. MEDIA QUERIES     */
+@import "media_queries.scss";
