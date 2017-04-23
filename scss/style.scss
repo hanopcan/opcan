@@ -63,16 +63,20 @@ h1, h2, h3, .entry-content h1, .entry-content h2, .entry-content h3 {
 li {
     margin-left: 1.75em;
 }
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .dashicons, .dashicons-before::before {
     margin-top: 6px;
 }
 .big-top-gap {
     margin-top: 50px;
 }
-hr {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.green-para {
+    color: $opcan_green;
 }
+
 
 /*0A. BUTTONS      */
 @include button_styling();
@@ -160,12 +164,12 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     letter-spacing: 2px;
     font-size: 0.9em;
 }
-.main-navigation a {
+.main-navigation li a {
     font-weight: 300;
     box-sizing: border-box;
     &:hover {
         //border-bottom: 2px solid $opcan_red;
-        //color: white;
+        color: $main_text_colour;
         //text-decoration: underline;
     }
 }
