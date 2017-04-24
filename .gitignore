@@ -4,6 +4,7 @@ node_modules/*
 #ignore the other gulp bits
 gulpfile.js
 package.json
+npm-debug.log
 
 .DS_Store
 
