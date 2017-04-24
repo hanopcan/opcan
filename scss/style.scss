@@ -76,6 +76,9 @@ hr {
 .green-para {
     color: $opcan_green;
 }
+.display-only-on-smaller-screens {
+    display: none;
+}
 
 
 /*0A. BUTTONS      */
@@ -108,6 +111,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 #content {
     margin-top: 125px;
+}
+.site-main {
+    margin-bottom: 0;
 }
 
 
@@ -188,20 +194,25 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
 
 /* 4. PAGES AND POSTS aka CONTENT    */ 
- .hentry {
-     margin-top: 100px;
-     .entry-title {
-        font-family: 'Raleway', sans-serif;      
-        color: $opcan_green;    
-     }
- }
+.site-main > :last-child {
+    margin-bottom: 100px;
+}
+.hentry {
+    margin-top: 100px;
+    .entry-title {
+    font-family: 'Raleway', sans-serif;      
+    color: $opcan_green;    
+    }
+}
 
 /* 5. TEMPLATES and SPECIFIC PAGES   */                 
 
 /* 5.1 IMAGE-FIRST TEMPLATE          */
 //set on the body tag
 .page-template-page-imagefirst {
-
+    .site-main > :last-child {
+        margin-bottom: 0;
+    }
     /* 1. layout    */ 
     #content  {
         padding: 0;
@@ -215,14 +226,19 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
         }
         .text {
-            margin-left: 20%;
-            margin-right: 20%;
+            margin: 100px 20% 0;
         }
         &.content_end {
             background-color: $opcan_green;
             width: 100%;
-            //padding: 50px 0;
             letter-spacing: 2px;
+            .footer_container {
+                padding: 50px 0;
+                max-width: 1350px;
+                .footer_container_inner {
+                    margin: 0 20%;
+                }
+            }
         }
     }
 }
@@ -259,10 +275,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
                 box-shadow: 7px 7px 0px 0px $opcan_green;
                 @include top_and_center();
                 @include column_direction ();
-                //border-radius: 10px;
                 box-sizing: border-box;
                 background-color: white;
-                //transform: rotate(1deg);
                 h2 {
                     flex: 4;
                     font-size: 1.3em;
@@ -293,12 +307,41 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
         #web_details, #mgt_details, #analytics_details {
             display: none;
             border-radius: 10px;
-            //box-shadow: 7px 7px 0px 0px $opcan_green;
             background-color: white;
-            //border: 2px solid $main_text_colour;
             padding: 25px 25px 5px 25px;
         }
     }
+}
+
+//Internet Explorer is a dick!! Some special code to get the boxes displaying as they should in IE10 and 11
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */  
+    .home {
+        &.no-sidebar .entry-content {
+            ul.borders {
+                li {
+                    h2 {
+                        max-width: 100%;
+                        min-height: 60px;
+                    }
+                    .more-link {
+                        color: $background_colour;
+                    }          
+                }
+            }
+        }
+    }
+}
+
+
+/* 6. SLIDERS                        */
+.soliloquy-outer-container {
+    margin-top: 50px;
+}
+
+/* 6.1. TESTIMONIALS                 */
+.testimonial-slider {
+
 }
 
 
@@ -313,7 +356,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 .footer_container {
     max-width: 1320px;
-    padding: 50px 15%;
+    padding: 50px 0%;
     margin: 25px auto 0;
     @include align_vertical_and_center();
     h2, h3 {
@@ -361,9 +404,20 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
         }
     }
 }
+.footer_menu {
+    text-transform: uppercase;
+    a:hover, a:visited {
+        color: white;
+    }
+}
 .site-info {
-    margin: 0.538461538em auto;
-    a {
+    margin: 25px auto;
+    text-align: center;
+    p {
+        color: white;
+        margin-bottom: 15px;
+    }
+    a, a:hover, a:visited {
         color: white;
     }
 }
@@ -371,15 +425,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     display: block;
 }
 
-/* 6. SLIDERS                        */
-.soliloquy-outer-container {
-    margin-top: 50px;
-}
-
-/* 6.1. TESTIMONIALS                 */
-.testimonial-slider {
-
-}
 
 
 /* 20. MEDIA QUERIES     */
