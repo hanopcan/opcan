@@ -118,6 +118,8 @@
   .site-branding .site-description {
     display: block; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
+  .page-template-page-imagefirst .image-first .text {
+    background-color: pink; }
   /* 5.2 HOME                          */
   .home.no-sidebar .entry-content .forest-image {
     padding: 50px 100px;
@@ -164,6 +166,8 @@
   #menu-toggle {
     margin-top: -40px; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
+  .page-template-page-imagefirst .image-first .text {
+    background-color: green; }
   /* 5.2 HOME                          */
   .home.no-sidebar .entry-content .forest-image {
     padding: 50px 25px;
@@ -195,8 +199,8 @@
     line-height: 1.2em;
     margin-bottom: 15px; } }
 
-/* phone size, around iphone 6*/
-/* 20E. PHONE SIZE, IPHONE6         */
+/* phone size, around iphone 6 Plus*/
+/* 20E. PHONE SIZE, IPHONE6 Plus, Samsung S8    */
 @media screen and (max-width: 500px) {
   @-ms-viewport {
     width: 500px; }
@@ -204,6 +208,8 @@
   .site-branding .site-description {
     padding-right: 100px; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
+  .page-template-page-imagefirst .image-first .text {
+    background-color: purple; }
   /* 5.2 HOME                          */
   .home.no-sidebar .entry-content .forest-image {
     padding: 15px 30px;
@@ -227,3 +233,15 @@
   .footer_container .text .dashicons-email-alt::before {
     font-size: 30px;
     margin-top: 0; } }
+
+/* 20F. PHONE SIZE, MOST PHONES        */
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 400px; }
+  /* 2. HEADER            */
+  /* 3.1. HAMBURGER NAV        */
+  #menu-toggle {
+    margin-top: -25px; }
+  /* 5.1 IMAGE-FIRST TEMPLATE          */
+  .page-template-page-imagefirst .image-first .text {
+    background-color: yellow; } }
