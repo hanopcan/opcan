@@ -281,7 +281,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       width: 33%;
       padding: 25px 20px;
       margin: 0 25px 0 0;
-      box-shadow: 7px 7px 0px 0px #597346;
+      box-shadow: 3px 3px 0px 0px #597346;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
