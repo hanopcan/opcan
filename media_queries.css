@@ -27,6 +27,10 @@
   hr {
     margin-top: 75px;
     margin-bottom: 75px; }
+  /* 5.0 DEFAULT TEMPLATE              */
+  .no-sidebar .entry-header, .no-sidebar .entry-content {
+    margin-left: 5%;
+    margin-right: 5%; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
   .page-template-page-imagefirst .image-first .text {
     margin-left: 8%;
@@ -85,6 +89,10 @@
       .main-navigation li a {
         padding: 10px;
         color: #041214; }
+  /* 5.0 DEFAULT TEMPLATE              */
+  .no-sidebar .entry-header, .no-sidebar .entry-content {
+    margin-left: 7.6923%;
+    margin-right: 7.6923%; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
   .page-template-page-imagefirst .image-first .text {
     margin: 50px 4% 0; }
