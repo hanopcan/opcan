@@ -32,6 +32,10 @@
 
 /* 7. FOOTER                */
 
+/* 10. TALKS PAGE           */
+
+/* 20. MEDIA QUERIES        */
+
 
 @import "style_variables_and_mixins.scss";
 
@@ -425,6 +429,37 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     display: block;
 }
 
+
+/* 10.  TALKS PAGE               */
+.talk {
+    background-color: white;
+    padding: 50px 25px;
+    margin: 25px 0;
+    h4 {
+        margin-bottom: 0;
+        font-weight: normal;
+        line-height: 1.5em;
+    }
+    .date {
+        color: $opcan_green;
+        margin-bottom: 15px;
+        font-size: 0.9em;
+    }
+    .button_container {
+        p {
+            display: none;
+        }
+        .button {
+            background-color: $opcan_green;
+            margin-top: 0;
+            &:hover {
+                background-color: white;
+                color: $opcan_green;
+                border: 1px solid $opcan_green;
+            }
+        }
+    }
+}
 
 
 /* 20. MEDIA QUERIES     */
