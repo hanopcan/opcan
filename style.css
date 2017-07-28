@@ -634,6 +634,14 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   /* 3.1. HAMBURGER NAV        */
   #menu-toggle {
     margin-top: -40px; }
+  /* 5.0 DEFAULT TEMPLATE              */
+  .page-template-default .hentry {
+    margin-top: 25px; }
+    .page-template-default .hentry img {
+      float: none;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 25px; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
   /* 5.2 HOME                          */
   .home.no-sidebar .entry-content .forest-image {
@@ -664,7 +672,10 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       padding: 0px; }
   .footer_container .text h2 {
     line-height: 1.2em;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  /* 10.  TALKS PAGE               */
+  .talk {
+    padding: 25px 20px 5px; } }
 
 /* phone size, around iphone 6 Plus*/
 /* 20E. PHONE SIZE, IPHONE6 Plus, Samsung S8    */
