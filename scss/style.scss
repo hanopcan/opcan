@@ -140,7 +140,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     background: url('img/Han_says_hello.png') no-repeat 15px 5px;
     background-size: 150px;
     background-color: $opcan_green;    
-    height: 125px;      
+    height: 130px;      
 }
 .site-header-main {
     @include justify-content-end();
