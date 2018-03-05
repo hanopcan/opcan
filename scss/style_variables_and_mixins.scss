@@ -1,24 +1,25 @@
-/* 1. VARIABLES            */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS              */
 /* 3. MIXINS               */
 /* 4. FLEX BOX LAYOUTS     */
 
 
 
-/* 1. VARIABLES          */
+/* 1. VARIABLES / FONTS    */
 $box_underline_thickness: 5px;
+$heading-font: 'Montserrat', sans-serif;
+$body-font: 'Museo', sans-serif;
+
 
 /* 2. COLOURS            */
-$main_text_colour: #041214;
+$main_text_colour: #161d12;
 $headers_text_colour: #626b6c;
 
 $background_colour: #7b7e78;
 $opcan_borders: #e0e1e2;
 
 $opcan_offwhite: #fafaf9;
-$opcan_blue: #1E8CA0;
-$opcan_purple: #731EA0;
-$opcan_red: #A0321E;
+
 $opcan_green: #597346;
 $opcan_medium_green: #6e855d;
 $opcan_light_green: #c1cbba;

@@ -26,25 +26,32 @@
 /* 7. FOOTER                */
 /* 10. TALKS PAGE           */
 /* 20. MEDIA QUERIES        */
-/* 1. VARIABLES            */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS              */
 /* 3. MIXINS               */
 /* 4. FLEX BOX LAYOUTS     */
-/* 1. VARIABLES          */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS            */
 /* 3. MIXINS             */
 /* 4. FLEX BOX LAYOUTS   */
+@font-face {
+  font-family: 'Museo';
+  src: url("fonts/Museo/MuseoSansRounded-700-webfont.eot");
+  src: url("fonts/Museo/MuseoSansRounded-700-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Museo/MuseoSansRounded-700-webfont.woff") format("woff"), url("fonts/Museo/MuseoSansRounded-700-webfont.ttf") format("truetype"), url("fonts/Museo/MuseoSansRounded-700-webfont.svg#texgyreherosregular") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
 /* 0. BASIC STYLING     */
 html {
   background-color: #fafaf9; }
 
 body {
-  color: #041214;
+  color: #161d12;
   background-color: #d9d9d9;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 1.15em;
-  letter-spacing: 1px; }
+  letter-spacing: 0px; }
 
 .site {
   background-color: #fafaf9; }
@@ -52,7 +59,7 @@ body {
 h1, h2, h3, .entry-content h1, .entry-content h2, .entry-content h3 {
   font-weight: 300;
   color: #597346;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 li {
   margin-left: 1.75em; }
@@ -176,14 +183,15 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   -webkit-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
   .site-branding .site-title a {
     color: white;
     font-size: 1.3em;
-    font-weight: 400;
     letter-spacing: 2px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Museo", sans-serif;
     text-transform: uppercase; }
+    .site-branding .site-title a:hover {
+      color: #161d12; }
   .site-branding .site-description {
     font-size: 0.9em;
     color: black;
@@ -198,7 +206,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .main-navigation a, .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
   color: white;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   font-size: 0.9em; }
 
@@ -206,7 +214,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   font-weight: 300;
   box-sizing: border-box; }
   .main-navigation li a:hover {
-    color: #041214; }
+    color: #161d12; }
 
 .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
   font-weight: 500; }
@@ -223,7 +231,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .hentry {
   margin-top: 100px; }
   .hentry .entry-title {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #597346; }
 
 /* 5. TEMPLATES and SPECIFIC PAGES   */
@@ -461,11 +469,11 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       border: 1px solid #597346; }
 
 /* 20. MEDIA QUERIES     */
-/* 1. VARIABLES            */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS              */
 /* 3. MIXINS               */
 /* 4. FLEX BOX LAYOUTS     */
-/* 1. VARIABLES          */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS            */
 /* 3. MIXINS             */
 /* 4. FLEX BOX LAYOUTS   */
@@ -551,7 +559,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       margin-left: 0; }
       .main-navigation li a {
         padding: 10px;
-        color: #041214; }
+        color: #161d12; }
   /* 5.0 DEFAULT TEMPLATE              */
   .no-sidebar .entry-header, .no-sidebar .entry-content {
     margin-left: 7.6923%;
