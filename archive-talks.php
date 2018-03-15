@@ -107,7 +107,7 @@ get_header(); ?>
 			),
 		'meta_key'	=> 'date',
 		'orderby'	=> 'meta_value_num',
-		'order'		=> 'ASC'
+		'order'		=> 'DESC'
 	);
 	$the_query = new WP_Query( $query_args );
 
@@ -125,10 +125,20 @@ get_header(); ?>
 				<div class="talk-wrapper">
 					<div class="talk">
 					<div class="talk-content previous-talk">
-						<?php $date = get_field('date');
+						<?php 
+						$date = get_field('date');
 						$date2 = date("F j, Y", strtotime($date)); 
 
-						echo $date2;?> - <a href="<?php the_field('post-event-link'); ?>" target="blank"><?php the_title(); ?></a>
+						echo $date2 . ' - '; 
+
+						if (get_field('post-event-link') ) { 
+						?>
+							<a href=" <?php the_field('post-event-link'); ?> " target="blank"><?php the_title(); ?></a>
+						<?php } else {
+							the_title();
+						}
+						
+						the_field('post_event_write-up'); ?>
 						
 					</div>
 					</div>
