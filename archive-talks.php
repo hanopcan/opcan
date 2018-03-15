@@ -127,11 +127,6 @@ get_header(); ?>
 					<div class="talk-content previous-talk">
 						<h2>
 						<?php 
-						$date = get_field('date');
-						$date2 = date("F j, Y", strtotime($date)); 
-
-						echo $date2 . ' - '; 
-
 						if (get_field('post-event-link') ) { 
 						?>
 							<a href=" <?php the_field('post-event-link'); ?> " target="blank"><?php the_field('title'); ?></a>
@@ -139,7 +134,10 @@ get_header(); ?>
 							the_field('title');
 						}
 						?></h2><?php
-						
+						$date = get_field('date');
+						$date2 = date("F j, Y", strtotime($date)); 
+
+						?> <div class="date"><?php echo $date2;?></div> <?php
 						the_field('post_event_write-up'); ?>
 						
 					</div>
