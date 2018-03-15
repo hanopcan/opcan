@@ -133,7 +133,7 @@ get_header(); ?>
 
 						if (get_field('post-event-link') ) { 
 						?>
-							<a href=" <?php the_field('post-event-link'); ?> " target="blank"><?php the_title(); ?></a>
+							<a href=" <?php the_field('post-event-link'); ?> " target="blank"><?php the_field('title'); ?></a>
 						<?php } else {
 							the_title();
 						}
