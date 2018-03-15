@@ -110,6 +110,21 @@
     .footer_container { 
         padding: 50px 8%;
     }  
+
+    /* 10.  TALKS PAGE               */
+    .post-type-archive-talks {
+        .next-talks-wrapper {
+            .page-header {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .talk {
+                .talk-content {
+                    margin: 0 5% 5%;
+                }
+            }
+        }
+    }
 }
 
 
@@ -225,6 +240,21 @@
     .footer_container { 
         padding: 50px 4%;
     }  
+
+    /* 10.  TALKS PAGE               */
+    .post-type-archive-talks {
+        .next-talks-wrapper {
+            .page-header {
+                margin-left: 7.6923%;
+                margin-right: 7.6923%;
+            }
+            .talk {
+                .talk-content {
+                    margin: 0 7.6923% 5%;
+                }
+            }
+        }
+    }
 }
 
 
@@ -396,10 +426,6 @@
         }
     }
 
-    /* 10.  TALKS PAGE               */
-    .talk {
-        padding: 25px 20px 5px;
-    }
 }
 
 

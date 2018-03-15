@@ -1,8 +1,8 @@
-/* 1. VARIABLES            */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS              */
 /* 3. MIXINS               */
 /* 4. FLEX BOX LAYOUTS     */
-/* 1. VARIABLES          */
+/* 1. VARIABLES / FONTS    */
 /* 2. COLOURS            */
 /* 3. MIXINS             */
 /* 4. FLEX BOX LAYOUTS   */
@@ -44,7 +44,13 @@
     padding: 50px 200px; }
   /* 7. FOOTER                */
   .footer_container {
-    padding: 50px 8%; } }
+    padding: 50px 8%; }
+  /* 10.  TALKS PAGE               */
+  .post-type-archive-talks .next-talks-wrapper .page-header {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .post-type-archive-talks .next-talks-wrapper .talk .talk-content {
+    margin: 0 5% 5%; } }
 
 /* *********************************** */
 /* 20B. 910px - HAMBURGER              */
@@ -88,7 +94,7 @@
       margin-left: 0; }
       .main-navigation li a {
         padding: 10px;
-        color: #041214; }
+        color: #161d12; }
   /* 5.0 DEFAULT TEMPLATE              */
   .no-sidebar .entry-header, .no-sidebar .entry-content {
     margin-left: 7.6923%;
@@ -111,7 +117,13 @@
     width: 100%;
     margin-top: 0; }
   .footer_container {
-    padding: 50px 4%; } }
+    padding: 50px 4%; }
+  /* 10.  TALKS PAGE               */
+  .post-type-archive-talks .next-talks-wrapper .page-header {
+    margin-left: 7.6923%;
+    margin-right: 7.6923%; }
+  .post-type-archive-talks .next-talks-wrapper .talk .talk-content {
+    margin: 0 7.6923% 5%; } }
 
 /* ******************************************* */
 /* inbetweeny size, medium small, tablet size */
@@ -209,10 +221,7 @@
       padding: 0px; }
   .footer_container .text h2 {
     line-height: 1.2em;
-    margin-bottom: 15px; }
-  /* 10.  TALKS PAGE               */
-  .talk {
-    padding: 25px 20px 5px; } }
+    margin-bottom: 15px; } }
 
 /* phone size, around iphone 6 Plus*/
 /* 20E. PHONE SIZE, IPHONE6 Plus, Samsung S8    */

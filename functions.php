@@ -28,4 +28,48 @@ function opcan_text_after_title( $post_type ) { ?>
 <?php }
 add_action( 'edit_form_after_title', 'opcan_text_after_title' );
 
+
+function create_custom_post_type_talks(){
+    $labels = array(
+        'name' => 'Talks',
+        'singular_name' => 'Talk',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Talk',
+        'edit_item' => 'Edit Talk',
+        'new_item' => 'New Talk',
+        'view_item' => 'View Talk',
+        'search_items' => 'Search Talks',
+        'not_found' => 'No Talks found',
+        'not_found_in_trash' => 'No Talks found in Trash',
+        'parent_item_colon' => '',
+    );
+    
+    $args = array(
+        'label' => __('Talks'),
+        'labels' => $labels, // from array above
+        'public' => true,
+        'can_export' => true,
+        'show_ui' => true,
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'menu_icon' => 'dashicons-megaphone', // from this list
+        'hierarchical' => false,
+        'rewrite' => array( "slug" => "talks" ), // defines URL base
+        'supports'=> array('title', 'thumbnail', 'editor', 'excerpt'),
+        'show_in_nav_menus' => true,
+        'taxonomies' => array( 'post_tag'), // own categories
+        'has_archive' => true
+    );
+
+    register_post_type('talks', $args);
+}
+add_action('init','create_custom_post_type_talks');
+
+// function exclude_category( $query ) {
+//     if ( is_post_type_archive( 'talks' ) ) {
+//         $query->set( 'order', asc );
+//         return;
+//     }
+// }
+// add_action( 'pre_get_posts', 'exclude_category' );
 ?>

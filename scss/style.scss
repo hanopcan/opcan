@@ -108,10 +108,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     max-width: none;
     max-width: unset;
 }
-.site-header-main, #content  {
-    max-width: 1320px;
+.site-header-main, #main  {
+    max-width: $max-container-width;
     margin: auto;
-    padding: 0 4.5455%;
 }
 //place the navigation where we want it
 .site-header-menu {
@@ -122,7 +121,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     }
 }
 #content {
-    margin-top: 125px;
+    margin-top: 200px;
+    padding: 0;
 }
 .site-main {
     margin-bottom: 0;
@@ -205,19 +205,17 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
 
 
-
-
 /* 4. PAGES AND POSTS aka CONTENT    */ 
 .site-main > :last-child {
     margin-bottom: 100px;
 }
 .hentry {
-    margin-top: 100px;
     .entry-title {
-    font-family: $heading-font;     
-    color: $opcan_green;    
+        font-family: $heading-font;     
+        color: $opcan_green;    
     }
 }
+
 
 /* 5. TEMPLATES and SPECIFIC PAGES   */                 
 
@@ -230,6 +228,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     /* 1. layout    */ 
     #content  {
         padding: 0;
+        margin-top: 95px;
     }    
 
     .image-first {
@@ -369,7 +368,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     padding: 0;
 }
 .footer_container {
-    max-width: 1320px;
+    max-width: $max-container-width;
     padding: 50px 0%;
     margin: 25px auto 0;
     @include align_vertical_and_center();
@@ -441,31 +440,68 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
 
 /* 10.  TALKS PAGE               */
-.talk {
-    background-color: white;
-    padding: 50px 25px 15px;
-    margin: 25px 0;
-    h4 {
-        margin-bottom: 0;
-        font-weight: normal;
-        line-height: 1.5em;
-    }
-    .date {
-        color: $opcan_green;
-        margin-bottom: 15px;
-        font-size: 0.9em;
-    }
-    .button_container {
-        p {
-            display: none;
+.post-type-archive-talks {
+    .next-talks-wrapper {
+        .header-wrapper {
+            max-width: $max-container-width;
+            margin: auto;
         }
-        .button {
-            background-color: $opcan_green;
-            margin-top: 0;
-            &:hover {
-                background-color: white;
+        .page-header {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 5px;
+            border: none;
+        }
+        .talk-wrapper {
+            background-color: white; 
+        }
+        .talk {
+            max-width: $max-container-width;
+            margin: auto;
+            .talk-content {
+                margin: 0 15% 5%;
+                padding: 50px 0;
+            }
+            h2 {
+                margin-bottom: 0;
+                font-weight: normal;
+                line-height: 1.5em;
+                text-transform: uppercase;
+                color: $main_text_colour;
+            }
+            .date {
                 color: $opcan_green;
-                border: 1px solid $opcan_green;
+                margin-bottom: 15px;
+            }
+            .button_container {
+                p {
+                    display: none;
+                }
+                .button {
+                    background-color: $opcan_green;
+                    margin-top: 0;
+                    &:hover {
+                        background-color: white;
+                        color: $opcan_green;
+                        border: 1px solid $opcan_green;
+                    }
+                }
+            }
+            .post-thumbnail {
+                margin: 25px auto;
+                max-width: 600px;
+            }
+            .talk-content.previous-talk {
+                padding: 25px 0;
+                a:link, a:visited {
+                    color: $main_text_colour;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
             }
         }
     }

@@ -117,10 +117,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   max-width: none;
   max-width: unset; }
 
-.site-header-main, #content {
+.site-header-main, #main {
   max-width: 1320px;
-  margin: auto;
-  padding: 0 4.5455%; }
+  margin: auto; }
 
 .site-header-menu {
   width: 100%; }
@@ -140,7 +139,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     margin-top: 7px; }
 
 #content {
-  margin-top: 125px; }
+  margin-top: 200px;
+  padding: 0; }
 
 .site-main {
   margin-bottom: 0; }
@@ -228,11 +228,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .site-main > :last-child {
   margin-bottom: 100px; }
 
-.hentry {
-  margin-top: 100px; }
-  .hentry .entry-title {
-    font-family: "Montserrat", sans-serif;
-    color: #597346; }
+.hentry .entry-title {
+  font-family: "Montserrat", sans-serif;
+  color: #597346; }
 
 /* 5. TEMPLATES and SPECIFIC PAGES   */
 /* 5.1 IMAGE-FIRST TEMPLATE          */
@@ -241,7 +239,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   .page-template-page-imagefirst .site-main > :last-child {
     margin-bottom: 0; }
   .page-template-page-imagefirst #content {
-    padding: 0; }
+    padding: 0;
+    margin-top: 95px; }
   .page-template-page-imagefirst .image-first .hentry {
     margin-top: 0; }
   .page-template-page-imagefirst .image-first .text {
@@ -446,27 +445,55 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   display: block; }
 
 /* 10.  TALKS PAGE               */
-.talk {
-  background-color: white;
-  padding: 50px 25px 15px;
-  margin: 25px 0; }
-  .talk h4 {
+.post-type-archive-talks .next-talks-wrapper .header-wrapper {
+  max-width: 1320px;
+  margin: auto; }
+
+.post-type-archive-talks .next-talks-wrapper .page-header {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5px;
+  border: none; }
+
+.post-type-archive-talks .next-talks-wrapper .talk-wrapper {
+  background-color: white; }
+
+.post-type-archive-talks .next-talks-wrapper .talk {
+  max-width: 1320px;
+  margin: auto; }
+  .post-type-archive-talks .next-talks-wrapper .talk .talk-content {
+    margin: 0 15% 5%;
+    padding: 50px 0; }
+  .post-type-archive-talks .next-talks-wrapper .talk h2 {
     margin-bottom: 0;
     font-weight: normal;
-    line-height: 1.5em; }
-  .talk .date {
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #161d12; }
+  .post-type-archive-talks .next-talks-wrapper .talk .date {
     color: #597346;
-    margin-bottom: 15px;
-    font-size: 0.9em; }
-  .talk .button_container p {
+    margin-bottom: 15px; }
+  .post-type-archive-talks .next-talks-wrapper .talk .button_container p {
     display: none; }
-  .talk .button_container .button {
+  .post-type-archive-talks .next-talks-wrapper .talk .button_container .button {
     background-color: #597346;
     margin-top: 0; }
-    .talk .button_container .button:hover {
+    .post-type-archive-talks .next-talks-wrapper .talk .button_container .button:hover {
       background-color: white;
       color: #597346;
       border: 1px solid #597346; }
+  .post-type-archive-talks .next-talks-wrapper .talk .post-thumbnail {
+    margin: 25px auto;
+    max-width: 600px; }
+  .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk {
+    padding: 25px 0; }
+    .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:link, .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:visited {
+      color: #161d12;
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:hover {
+      text-decoration: none; }
 
 /* 20. MEDIA QUERIES     */
 /* 1. VARIABLES / FONTS    */
@@ -515,7 +542,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     padding: 50px 200px; }
   /* 7. FOOTER                */
   .footer_container {
-    padding: 50px 8%; } }
+    padding: 50px 8%; }
+  /* 10.  TALKS PAGE               */
+  .post-type-archive-talks .next-talks-wrapper .page-header {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .post-type-archive-talks .next-talks-wrapper .talk .talk-content {
+    margin: 0 5% 5%; } }
 
 /* *********************************** */
 /* 20B. 910px - HAMBURGER              */
@@ -582,7 +615,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     width: 100%;
     margin-top: 0; }
   .footer_container {
-    padding: 50px 4%; } }
+    padding: 50px 4%; }
+  /* 10.  TALKS PAGE               */
+  .post-type-archive-talks .next-talks-wrapper .page-header {
+    margin-left: 7.6923%;
+    margin-right: 7.6923%; }
+  .post-type-archive-talks .next-talks-wrapper .talk .talk-content {
+    margin: 0 7.6923% 5%; } }
 
 /* ******************************************* */
 /* inbetweeny size, medium small, tablet size */
@@ -680,10 +719,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       padding: 0px; }
   .footer_container .text h2 {
     line-height: 1.2em;
-    margin-bottom: 15px; }
-  /* 10.  TALKS PAGE               */
-  .talk {
-    padding: 25px 20px 5px; } }
+    margin-bottom: 15px; } }
 
 /* phone size, around iphone 6 Plus*/
 /* 20E. PHONE SIZE, IPHONE6 Plus, Samsung S8    */
