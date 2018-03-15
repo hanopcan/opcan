@@ -135,7 +135,7 @@ get_header(); ?>
 						?>
 							<a href=" <?php the_field('post-event-link'); ?> " target="blank"><?php the_field('title'); ?></a>
 						<?php } else {
-							the_title();
+							the_field('title');
 						}
 						
 						the_field('post_event_write-up'); ?>
