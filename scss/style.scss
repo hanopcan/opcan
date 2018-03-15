@@ -469,6 +469,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
                 text-transform: uppercase;
                 color: $main_text_colour;
             }
+            p {
+                margin: 0;
+                a:link, a:visited {
+                    color: $opcan_green;
+                    text-transform: none;
+                }
+            }
             .date {
                 color: $opcan_green;
                 margin-bottom: 15px;
@@ -502,9 +509,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
                 a:hover {
                     text-decoration: none;
                 } 
-                p {
-                    margin: 0;
-                }
             }
         }
     }

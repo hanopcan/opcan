@@ -470,6 +470,11 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     line-height: 1.5em;
     text-transform: uppercase;
     color: #161d12; }
+  .post-type-archive-talks .next-talks-wrapper .talk p {
+    margin: 0; }
+    .post-type-archive-talks .next-talks-wrapper .talk p a:link, .post-type-archive-talks .next-talks-wrapper .talk p a:visited {
+      color: #597346;
+      text-transform: none; }
   .post-type-archive-talks .next-talks-wrapper .talk .date {
     color: #597346;
     margin-bottom: 15px; }
@@ -494,8 +499,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       font-weight: bold; }
     .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:hover {
       text-decoration: none; }
-    .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk p {
-      margin: 0; }
 
 /* 20. MEDIA QUERIES     */
 /* 1. VARIABLES / FONTS    */
