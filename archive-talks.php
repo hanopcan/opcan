@@ -125,6 +125,7 @@ get_header(); ?>
 				<div class="talk-wrapper">
 					<div class="talk">
 					<div class="talk-content previous-talk">
+						<h2>
 						<?php 
 						$date = get_field('date');
 						$date2 = date("F j, Y", strtotime($date)); 
@@ -137,6 +138,7 @@ get_header(); ?>
 						<?php } else {
 							the_field('title');
 						}
+						?></h2><?php
 						
 						the_field('post_event_write-up'); ?>
 						
