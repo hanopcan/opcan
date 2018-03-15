@@ -509,6 +509,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
                 a:hover {
                     text-decoration: none;
                 } 
+                p {
+                    margin: 0;
+                    a:link, a:visited {
+                        color: $opcan_green;
+                        text-transform: none;
+                    }
+                }
             }
         }
     }

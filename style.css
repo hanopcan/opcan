@@ -499,6 +499,11 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
       font-weight: bold; }
     .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:hover {
       text-decoration: none; }
+    .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk p {
+      margin: 0; }
+      .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk p a:link, .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk p a:visited {
+        color: #597346;
+        text-transform: none; }
 
 /* 20. MEDIA QUERIES     */
 /* 1. VARIABLES / FONTS    */
