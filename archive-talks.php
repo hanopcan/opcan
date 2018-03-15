@@ -98,6 +98,7 @@ get_header(); ?>
 	$today = date('Ymd');
 	$query_args = array(
 		'post_type' 	=> 'talks',
+		'posts_per_page' => 15,
 		'meta_query' => array(
 			array(
 				'key'		=> 'date',
