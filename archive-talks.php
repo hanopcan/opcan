@@ -66,7 +66,7 @@ get_header(); ?>
 		<div class="next-talks-wrapper">
 			<div class="header-wrapper">
 				<header class="page-header">
-						<h1 class="entry-title">Where am I speaking/teaching next?</h1>
+						<h1 class="entry-title">Where am I next?</h1>
 				</header><!-- .page-header -->
 			</div>	
 			<?php 
@@ -117,7 +117,7 @@ get_header(); ?>
 		<div class="next-talks-wrapper">
 			<div class="header-wrapper">
 				<header class="page-header">
-						<h1 class="entry-title">Where have I spoken previously?</h1>
+						<h1 class="entry-title">What have I been up to?</h1>
 				</header><!-- .page-header -->
 			</div>	
 			<?php 
