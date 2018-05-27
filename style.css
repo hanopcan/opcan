@@ -468,7 +468,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     margin-bottom: 0;
     font-weight: normal;
     line-height: 1.5em;
-    text-transform: uppercase;
     color: #161d12; }
   .post-type-archive-talks .next-talks-wrapper .talk p {
     margin: 0; }
@@ -495,7 +494,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:link, .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:visited {
       color: #161d12;
       text-decoration: underline;
-      text-transform: uppercase;
       font-weight: bold; }
     .post-type-archive-talks .next-talks-wrapper .talk .talk-content.previous-talk a:hover {
       text-decoration: none; }

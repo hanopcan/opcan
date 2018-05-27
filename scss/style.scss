@@ -466,7 +466,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
                 margin-bottom: 0;
                 font-weight: normal;
                 line-height: 1.5em;
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 color: $main_text_colour;
             }
             p {
@@ -503,7 +503,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
                 a:link, a:visited {
                     color: $main_text_colour;
                     text-decoration: underline;
-                    text-transform: uppercase;
+                    //text-transform: uppercase;
                     font-weight: bold;
                 }
                 a:hover {
