@@ -10,6 +10,20 @@
  */
 ?>
 
+		<?php if ( !is_page( 'Contact' ) ) { ?>
+		<div class="content_end pre-footer-block">
+			<div class="footer_container no-flex">
+				<div class="footer_container_inner">
+					<h3>Interested? Great! Whatever the size of your problem, there's nothing to lose so drop me a line and we can have a no obligation chat about how I could help.</h3>
+					<div class="button_container">
+						<a href="<?php echo get_site_url(); ?>/contact">
+							<div class="button"><span class="dashicons dashicons-email-alt"></span> Contact Hannah</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<?php } ?>
 
 
 		<footer id="colophon" class="site-footer" role="contentinfo">

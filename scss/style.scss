@@ -230,30 +230,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
         padding: 0;
         margin-top: 95px;
     }    
-
-    .image-first {
-        .hentry {
-            margin-top: 0;
-        }
-        &.no-sidebar .entry-content {
-
-        }
-        .text {
-            margin: 100px 20% 0;
-        }
-        &.content_end {
-            background-color: $opcan_green;
-            width: 100%;
-            letter-spacing: 2px;
-            .footer_container {
-                padding: 50px 0;
-                max-width: 1350px;
-                .footer_container_inner {
-                    margin: 0 20%;
-                }
-            }
-        }
-    }
 }
 
 /* 5.2 HOME                          */
@@ -360,6 +336,27 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
 
 /* 7. FOOTER                */
+.pre-footer-block {
+    .hentry {
+        margin-top: 0;
+    }
+    .text {
+        margin: 100px 20% 0;
+    }
+    &.content_end {
+        background-color: $opcan_green;
+        width: 100%;
+        letter-spacing: 2px;
+        .footer_container {
+            padding: 50px 0;
+            max-width: 1350px;
+            .footer_container_inner {
+                margin: 0 20%;
+            }
+        }
+    }
+}
+
 .site-footer {
     @include top_and_center();
     @include column_direction ();

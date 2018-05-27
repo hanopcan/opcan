@@ -241,19 +241,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   .page-template-page-imagefirst #content {
     padding: 0;
     margin-top: 95px; }
-  .page-template-page-imagefirst .image-first .hentry {
-    margin-top: 0; }
-  .page-template-page-imagefirst .image-first .text {
-    margin: 100px 20% 0; }
-  .page-template-page-imagefirst .image-first.content_end {
-    background-color: #597346;
-    width: 100%;
-    letter-spacing: 2px; }
-    .page-template-page-imagefirst .image-first.content_end .footer_container {
-      padding: 50px 0;
-      max-width: 1350px; }
-      .page-template-page-imagefirst .image-first.content_end .footer_container .footer_container_inner {
-        margin: 0 20%; }
 
 /* 5.2 HOME                          */
 .home .entry-title {
@@ -347,6 +334,22 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 
 /* 6.1. TESTIMONIALS                 */
 /* 7. FOOTER                */
+.pre-footer-block .hentry {
+  margin-top: 0; }
+
+.pre-footer-block .text {
+  margin: 100px 20% 0; }
+
+.pre-footer-block.content_end {
+  background-color: #597346;
+  width: 100%;
+  letter-spacing: 2px; }
+  .pre-footer-block.content_end .footer_container {
+    padding: 50px 0;
+    max-width: 1350px; }
+    .pre-footer-block.content_end .footer_container .footer_container_inner {
+      margin: 0 20%; }
+
 .site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
