@@ -608,6 +608,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     margin-left: 7.6923%;
     margin-right: 7.6923%; }
   /* 5.1 IMAGE-FIRST TEMPLATE          */
+  .page-template-page-imagefirst #content {
+    margin-top: 0; }
   .page-template-page-imagefirst .image-first .text {
     margin: 50px 4% 0; }
   .page-template-page-imagefirst .image-first.content_end .footer_container {

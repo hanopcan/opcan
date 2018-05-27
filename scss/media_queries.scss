@@ -203,6 +203,9 @@
 
     /* 5.1 IMAGE-FIRST TEMPLATE          */
     .page-template-page-imagefirst {  
+        #content {
+            margin-top: 0;
+        }
         .image-first {
             .text {
                 margin: 50px 4% 0;
