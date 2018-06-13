@@ -1,0 +1,26 @@
+@mixin button() {
+    @include rem(padding, 10px 20px);
+    background-color: $sol-accent-colour;
+    border: 1px solid $sol-accent-colour;
+    border-radius: 40px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    transition: background-color .3s ease-in-out;
+    text-transform: none;
+    letter-spacing: 0;
+
+    a {
+        color: white;
+        &:hover {
+            color: $sol-accent-colour;
+        }
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $sol-accent-colour;
+        border: 1px solid $sol-accent-colour;
+    }
+}
