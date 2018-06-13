@@ -1,0 +1,14 @@
+
+.button, a.more-link, #submit, #mc_embed_signup .button {
+    @include button();
+}
+
+#mc_embed_signup .button:hover {
+    background-color: transparent !important;
+}
+
+
+.secondary-button {
+    // secondary button styles here
+}
+
