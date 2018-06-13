@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-md navbar-opcan bg-opcan-green">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php else : ?>
 
 							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-						
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
 						<?php endif; ?>
 						
 					

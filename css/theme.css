@@ -10462,6 +10462,9 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+.bg-opcan-green {
+  background-color: #597346; }
+
 @font-face {
   font-family: "Museo";
   src: url("../fonts/Museo/MuseoSansRounded-700-webfont.eot");
