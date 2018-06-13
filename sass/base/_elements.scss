@@ -21,11 +21,11 @@ html,
 body {
     font-family: $base-font;
     font-size: $base-font-size;
-    font-weight: $base-font-weight;
+    // font-weight: $base-font-weight;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    color: $black;
+    color: $opcan_green;
 }
 
 audio,
@@ -64,34 +64,35 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: $base-font-weight;
-    margin: $heading-spacing-unit;
+    font-family: $title-font;
+    // font-weight: $base-font-weight;
+    // margin: $heading-spacing-unit;
 }
 
-h1 {
-    @include rem(font-size, $heading-one);
-}
+// h1 {
+//     @include rem(font-size, $heading-one);
+// }
 
-h2 {
-    @include rem(font-size, $heading-two);
-}
+// h2 {
+//     @include rem(font-size, $heading-two);
+// }
 
-h3 {
-    @include rem(font-size, $heading-three);
-}
+// h3 {
+//     @include rem(font-size, $heading-three);
+// }
 
-h4 {
-    @include rem(font-size, $heading-four);
-}
+// h4 {
+//     @include rem(font-size, $heading-four);
+// }
 
-h5 {
-    @include rem(font-size, $heading-five);
-}
+// h5 {
+//     @include rem(font-size, $heading-five);
+// }
 
-h6 {
-    @include rem(font-size, $heading-six);
-    font-family: $base-font;
-}
+// h6 {
+//     @include rem(font-size, $heading-six);
+//     font-family: $base-font;
+// }
 
 a {
     -webkit-tap-highlight-color: transparent;
@@ -115,20 +116,20 @@ fieldset {
     }
 }
 
-form {
-    text-align: center;
+// form {
+//     text-align: center;
 
-    label,
-    input {
-        @include rem(font-size, 12px);
-    }
+//     label,
+//     input {
+//         @include rem(font-size, 12px);
+//     }
 
-    label {
-        @include rem(margin-top, 10px);
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-}
+//     label {
+//         @include rem(margin-top, 10px);
+//         font-weight: 300;
+//         text-transform: uppercase;
+//     }
+// }
 
 input {
     &:invalid {
@@ -136,53 +137,53 @@ input {
     }
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="submit"],
-textarea {
-    border-radius: 0;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border-width: 0 0 1px 0;
-    border-color: $black;
-    border-style: solid;
-    max-width: 100%;
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// input[type="submit"],
+// textarea {
+//     border-radius: 0;
+//     -webkit-appearance: none;
+//     background-color: transparent;
+//     border-width: 0 0 1px 0;
+//     border-color: $black;
+//     border-style: solid;
+//     max-width: 100%;
 
-    &:focus {
-        outline: 0;
-    }
-}
+//     &:focus {
+//         outline: 0;
+//     }
+// }
 
-input {
-    transition: background-color .3s ease-in-out;
-    margin-bottom: 0;
-    &:hover {
-        background-color: $white;
-    }
-}
+// input {
+//     transition: background-color .3s ease-in-out;
+//     margin-bottom: 0;
+//     &:hover {
+//         background-color: $white;
+//     }
+// }
 
-input[type="submit"] {
-    @include rem(font-size, 12px);
-    border: 1px solid $black;
-    background-color: transparent;
-    transition: background-color .3s ease-in-out;
-    width: 100%;
-    color: $black;
-    &:hover {
-        background-color: $white;
-    }
-}
+// input[type="submit"] {
+//     @include rem(font-size, 12px);
+//     border: 1px solid $black;
+//     background-color: transparent;
+//     transition: background-color .3s ease-in-out;
+//     width: 100%;
+//     color: $black;
+//     &:hover {
+//         background-color: $white;
+//     }
+// }
 
 textarea {
     resize: vertical;
@@ -230,48 +231,48 @@ ol {
     padding: 0;
 }
 
-p {
-    @include rem(margin, $vertical-spacing-unit 0);
+// p {
+//     @include rem(margin, $vertical-spacing-unit 0);
 
-    &:empty {
-        margin: 0;
-    }
-}
+//     &:empty {
+//         margin: 0;
+//     }
+// }
 
-blockquote,
-q {
-    quotes: '\201C""\201D""\2018""\2019';
-    border-left: 10px solid $sol-pale-text;
-    @include rem(padding-left, 10px);
-    background-color: $sol-light-grey-bg;
-    font-style: italic;
-    &:before {
-        content: open-quote;
-    }
+// blockquote,
+// q {
+//     quotes: '\201C""\201D""\2018""\2019';
+//     border-left: 10px solid $sol-pale-text;
+//     @include rem(padding-left, 10px);
+//     background-color: $sol-light-grey-bg;
+//     font-style: italic;
+//     &:before {
+//         content: open-quote;
+//     }
 
-    &:after {
-        content: close-quote;
-    }
+//     &:after {
+//         content: close-quote;
+//     }
 
-    p {
-        display: inline;
-    }
-}
+//     p {
+//         display: inline;
+//     }
+// }
 
-hr {
-    border: 0;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: $sol-pale-text;
-}
-span {
-    color: $black;
-}
-strong {
-    font-weight: 500;
-}
+// hr {
+//     border: 0;
+//     display: block;
+//     height: 1px;
+//     width: 100%;
+//     background-color: $sol-pale-text;
+// }
+// span {
+//     color: $black;
+// }
+// strong {
+//     font-weight: 500;
+// }
 
-em {
-    font-style: italic;
-}
+// em {
+//     font-style: italic;
+// }

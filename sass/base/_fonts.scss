@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @font-face {
-    font-family: 'ProzaLibre';
-    src: url('fonts/proza-libre/prozalibre-regular.eot');
-    src: url('fonts/proza-libre/prozalibre-regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/proza-libre/prozalibre-regular.woff2') format('woff2'),
-         url('fonts/proza-libre/prozalibre-regular.woff') format('woff'),
-         url('fonts/proza-libre/prozalibre-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Museo";
+    src: url("../fonts/Museo/MuseoSansRounded-700-webfont.eot");
+    src: url("../fonts/Museo/MuseoSansRounded-700-webfont.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/Museo/MuseoSansRounded-700-webfont.woff") format("woff"), 
+         url("../fonts/Museo/MuseoSansRounded-700-webfont.ttf") format("truetype"), 
+         url("../fonts/Museo/MuseoSansRounded-700-webfont.svg#texgyreherosregular") format("svg");
+    font-weight: 700;
+    font-style: normal; 
 }
