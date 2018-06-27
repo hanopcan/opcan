@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php the_custom_logo(); ?>
 
 			<?php if ( 'container' == $container ) : ?>
-				<div class="container navbar-inner d-flex">
+				<div class="container navbar-inner">
 			<?php endif; ?>
 		
 

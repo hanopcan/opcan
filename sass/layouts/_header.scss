@@ -2,8 +2,9 @@
   .custom-logo-link {
     margin: auto;
 
-    @include breakpoint($medium) {
+    @include media-breakpoint-up(md) {
       margin: 0px;
+      position: absolute;
     }
 
     img {
@@ -12,10 +13,17 @@
     }
   }
 
-  .navbar-brand {
-    color: $opcan_offwhite;
+
+
+  .navbar-inner {
+    a {
+      color: $opcan_offwhite;
+    }
+
+    @extend .d-flex;
+    @extend .flex-column;
     
-    &.blog-name {
+    .blog-name {
       text-transform: uppercase;
       font-size: $h1-font-size;
     }
