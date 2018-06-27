@@ -34,18 +34,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-opcan bg-opcan-green">
 
+			<?php the_custom_logo(); ?>
+
 			<?php if ( 'container' == $container ) : ?>
-				<div class="container" >
+				<div class="container navbar-inner d-flex">
 			<?php endif; ?>
 		
-		
-			<?php the_custom_logo(); ?>
-			<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-			<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
+
+			<a class="navbar-brand blog-name" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+			<a class="navbar-brand blog-description" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
 
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon">MENU</span>
 			</button>
 
 			<!-- The WordPress Menu goes here -->

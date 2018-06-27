@@ -1,0 +1,32 @@
+#wrapper-navbar {
+  .custom-logo-link {
+    margin: auto;
+
+    @include breakpoint($medium) {
+      margin: 0px;
+    }
+
+    img {
+      height: 150px;
+      width: 200px;
+    }
+  }
+
+  .navbar-brand {
+    color: $opcan_offwhite;
+    
+    &.blog-name {
+      text-transform: uppercase;
+      font-size: $h1-font-size;
+    }
+    .blog-description {
+
+    }
+
+  }
+
+  
+
+ 
+
+}

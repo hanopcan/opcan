@@ -12,9 +12,14 @@
 // Custom theme files //
 @import "base/theme_variables"; // ----- My variables, colours etc
 @import "base/generic-classes"; // ----- My variables, colours etc
+
 @import "base/fonts";
 @import "base/elements";
 
+// Custom components
 
 
+
+// Custom layouts
+@import "layouts/header"; 
 @import "layouts/contact-form7"; // Contact Form 7 - Bootstrap 4 support
