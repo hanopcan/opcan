@@ -2,7 +2,6 @@
 node_modules/*
 
 #ignore the other gulp bits
-package.json
 npm-debug.log
 
 .DS_Store
