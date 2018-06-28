@@ -61,9 +61,5 @@
     }
 
     // output the converted rules
-    @if ($lt-ie9) {
-        #{$property}: $px-values;
-    } @else {
-        #{$property}: $rem-values;
-    }
+    #{$property}: $rem-values;
 }
