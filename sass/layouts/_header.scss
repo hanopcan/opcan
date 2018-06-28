@@ -1,34 +1,66 @@
 #wrapper-navbar {
+  .navbar {
+    padding: 0;
+
+  }
+  .navbar-expand-md > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .custom-logo-link {
     margin: auto;
 
     @include media-breakpoint-up(md) {
-      margin: 0px;
+      margin: 0;
       position: absolute;
     }
 
     img {
-      height: 150px;
-      width: 200px;
+      @include rem(height, 150px);
+      @include rem(width, 203px);
     }
   }
 
 
 
   .navbar-inner {
+    margin-top: 1rem;
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .align-items-start;
+
+    @include media-breakpoint-up(md) {
+      align-items: center !important;
+      // @extend .align-items-center;
+    }
+
+    .navbar-brand {
+      padding: 0;
+      white-space: normal;
+      margin: 0;
+
+      @include media-breakpoint-up(md) {
+        margin: 0;
+      }
+    }
+
     a {
       color: $opcan_offwhite;
     }
 
-    @extend .d-flex;
-    @extend .flex-column;
-    
     .blog-name {
       text-transform: uppercase;
-      font-size: $h1-font-size;
+      @include rem(font-size, $h1-font-size);
+      @include rem(line-height, $h1-font-size);
+      font-family: 'Museo', sans-serif;
     }
     .blog-description {
+      color: $main_text_colour;
+      width: 75%;
 
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
     }
 
   }
