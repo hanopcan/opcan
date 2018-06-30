@@ -1,11 +1,14 @@
 .navbar-toggler {
+    position: absolute;
+    @include rem(margin-top, $h1-font-size+10px);
+    align-self: flex-end;
+    padding: 0.5rem 0.5rem;
     color: $opcan_offwhite;
     border: 1px solid $opcan_offwhite;
-    position: relative;
-    margin-top: -54px;
-    align-self: flex-end;
-    padding: 0.25rem 0.5rem;
-    margin-bottom: 20px;
+
+    @include media-breakpoint-up(sm) {
+        @include rem(margin-top, 0);
+    }      
 }
 
 #navbarNavDropdown {
@@ -21,16 +24,42 @@
     }    
 }
 
+#navbarNavDropdown.show, #navbarNavDropdown.collapsing {
+    li a {
+        border-bottom: 1px solid white;
+        padding: .75em 0;
+    }
+    li:last-child a {
+        border-bottom: 0;
+    }
+}
+
+
 #main-menu {
     @extend .container;
-    padding-left: 20px;
+    @include rem(padding-left, 23px);
+
+    @include media-breakpoint-up(sm) {
+        @include rem(padding-left, 15px);
+    }   
 
     @include media-breakpoint-up(md) {
-        padding-left: 0;
+        padding-top: 1rem;
     } 
     
     li a {
         text-transform: uppercase;  
-        @include rem(font-size, $base-font-size);
+        @include rem(font-size, $navigation-font-size-small);
+
+        @include media-breakpoint-up(md) {
+            padding: .5rem 1em;
+        } 
+
+        &:hover {
+            color: $main_text_colour;
+        }
+    }
+    li.current_page_item {
+        font-weight: 500;
     }
 }

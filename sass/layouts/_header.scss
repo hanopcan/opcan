@@ -1,72 +1,90 @@
-#wrapper-navbar {
-  .navbar {
-    padding: 0;
+/* Header bar across all pages
+   Controls layout of logo, site title and site description */
 
+.navbar {
+  padding: 0;
+
+  @include media-breakpoint-up(md) {
+    @include rem(height, 170px);
   }
-  .navbar-expand-md > .container {
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+.navbar-expand-md > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.custom-logo-link {
+  margin: auto;
+  margin-top: 0.5rem;
+  @include media-breakpoint-up(md) {
+    margin: 0;
+    position: absolute;
   }
-  .custom-logo-link {
-    margin: auto;
+
+  img {
+    @include rem(height, 150px);
+    @include rem(width, 203px);
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+  white-space: normal;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
+}
+
+.navbar-inner {
+  @extend .align-self-end;
+
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .align-items-start;
+  padding-top: 1rem;
+
+  @include media-breakpoint-up(md) {
+    align-items: center !important;
+    padding-top: 0;
+    // @extend .align-items-center;
+  }
+
+  a {
+    color: $opcan_offwhite;
+  }
+
+  .blog-name {
+    text-transform: uppercase;
+    @include rem(font-size, $h1-font-size);
+    @include rem(line-height, $h1-font-size);
+    font-family: $title-font;
+    margin-right: 0;
+
+    @include media-breakpoint-up(sm) {
+      @include rem(font-size, $site-title-font-size);
+      @include rem(line-height, $site-title-font-size);
+    }
+  }
+
+  .blog-description {
+    color: $main_text_colour;
+    width: 75%;
+    @include rem(max-width, 220px);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: $base-font-weight-heavy;
+    @include rem(font-size, $navigation-font-size-small);
+
+    @include media-breakpoint-up(sm) {
+      max-width: none;
+      @include rem(letter-spacing, 0.15px);
+      @include rem(font-size, $navigation-font-size-medium);
+    }
 
     @include media-breakpoint-up(md) {
-      margin: 0;
-      position: absolute;
-    }
-
-    img {
-      @include rem(height, 150px);
-      @include rem(width, 203px);
+      width: auto;
     }
   }
-
-
-
-  .navbar-inner {
-    margin-top: 1rem;
-    @extend .d-flex;
-    @extend .flex-column;
-    @extend .align-items-start;
-
-    @include media-breakpoint-up(md) {
-      align-items: center !important;
-      // @extend .align-items-center;
-    }
-
-    .navbar-brand {
-      padding: 0;
-      white-space: normal;
-      margin: 0;
-
-      @include media-breakpoint-up(md) {
-        margin: 0;
-      }
-    }
-
-    a {
-      color: $opcan_offwhite;
-    }
-
-    .blog-name {
-      text-transform: uppercase;
-      @include rem(font-size, $h1-font-size);
-      @include rem(line-height, $h1-font-size);
-      font-family: 'Museo', sans-serif;
-    }
-    .blog-description {
-      color: $main_text_colour;
-      width: 75%;
-
-      @include media-breakpoint-up(md) {
-        width: auto;
-      }
-    }
-
-  }
-
-  
-
- 
-
 }

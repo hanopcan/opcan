@@ -19,13 +19,14 @@ html {
 
 html,
 body {
+    color: $main_text_colour;
     font-family: $base-font;
-    font-size: $base-font-size;
-    // font-weight: $base-font-weight;
+    font-weight: $base-font-weight;
+    @include rem(font-size, $base-font-size);
+    @include rem(line-height, ($base-font-size*1.5));
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    color: $main_text_colour;
 }
 
 audio,
