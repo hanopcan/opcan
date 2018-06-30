@@ -1,0 +1,9 @@
+/* Footer bar across all pages */
+#page-wrapper {
+  z-index: 1;
+  position: relative;
+  @include rem(margin-bottom, $footer-height);
+  background-color: white;
+}
+
+

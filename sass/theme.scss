@@ -18,9 +18,10 @@
 
 // Custom components
 @import "components/navigation";
+@import "components/icons";
 
 
 // Custom layouts
 @import "layouts/header"; 
 @import "layouts/footer"; 
-@import "layouts/contact-form7"; // Contact Form 7 - Bootstrap 4 support
+@import "layouts/page-wrapper";

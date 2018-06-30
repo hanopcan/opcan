@@ -1,4 +1,45 @@
 /* Footer bar across all pages */
 #wrapper-footer {
   background-color: $background_colour;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  @include rem(height, $footer-height);
+  @extend .d-flex;
+  @extend .align-items-center;
 }
+
+.footer {
+  @include rem( max-width, $footer-container);
+  @extend .row;
+  margin: auto;
+
+  .hello-again, .footer-connect {
+    @extend .col-6;
+    padding: 0;
+  }
+}
+
+.footer-title {
+  @include rem( font-size, $h3-font-size);
+  text-align: center;
+  color: $opcan-offwhite;
+  font-family: $title-font;
+}
+
+.footer-connect {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+
+}
+
+.hello-again img{
+  width: 100%;
+  max-width: 180px;
+}
+
+
+
