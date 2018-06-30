@@ -25,6 +25,10 @@
   img {
     @include rem(height, 150px);
     @include rem(width, 203px);
+
+    @include media-breakpoint-up(lg) {
+      margin-left: 2rem;
+    }
   }
 }
 
