@@ -1,4 +1,28 @@
-/* Footer bar across all pages */
+/* 1. GENERAL, USEFUL FOOTER STUFF */
+/* 2. STANDARD FOOTER              */
+/* 3. CONTACT FOOTER               */
+
+
+
+/* 1. GENERAL, USEFUL FOOTER STUFF */
+.footer-title {
+  @include rem( font-size, $h3-font-size);
+  @include rem( line-height, $h3-font-size);
+  text-align: center;
+  color: $opcan-offwhite;
+  font-family: $title-font;
+  font-weight: $base-font-weight;
+}
+
+.footer-connect {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+}
+
+
+/* 2. STANDARD FOOTER */
 #wrapper-footer {
   background-color: $background_colour;
   position: fixed;
@@ -11,7 +35,7 @@
 }
 
 .footer {
-  @include rem( max-width, $footer-container);
+  @include rem( max-width, $footer-container-width);
   @extend .row;
   margin: auto;
 
@@ -21,25 +45,25 @@
   }
 }
 
-.footer-title {
-  @include rem( font-size, $h3-font-size);
-  text-align: center;
-  color: $opcan-offwhite;
-  font-family: $title-font;
-}
-
-.footer-connect {
-  @extend .d-flex;
-  @extend .flex-column;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-
-}
-
 .hello-again img{
   width: 100%;
   max-width: 180px;
 }
 
 
+/* 3. CONTACT FOOTER */
+.footer-contact-cta {
+  background-color: $opcan-green;
+  padding: 1.5rem 0;
 
+  .footer-contact-cta-inner {
+    @include rem( max-width, $footer-container-width);
+    color: $opcan-offwhite;
+    @extend .container;
+    text-align: center;
+
+    .footer-title {
+      @include rem( line-height, $h3-font-size*1.5);
+    }
+  }
+}

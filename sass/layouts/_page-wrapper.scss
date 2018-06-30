@@ -4,6 +4,5 @@
   position: relative;
   @include rem(margin-bottom, $footer-height);
   background-color: white;
+  padding-top: 2rem;
 }
-
-
