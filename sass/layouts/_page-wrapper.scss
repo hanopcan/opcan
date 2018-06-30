@@ -5,4 +5,16 @@
   @include rem(margin-bottom, $footer-height);
   background-color: white;
   padding-top: 2rem;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 3rem;
+  }
+
+  article {
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 3rem;
+    }
+  }
 }
