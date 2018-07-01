@@ -18,7 +18,8 @@ html {
 }
 
 html,
-body {
+body,
+p {
     color: $main_text_colour;
     font-family: $base-font;
     font-weight: $base-font-weight;
@@ -113,7 +114,7 @@ fieldset {
     ul {
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding: 0 15px;
     }
 }
 
@@ -222,12 +223,8 @@ button {
 }
 
 
-ul {
-    margin: 0;
-    padding: 0;
+ul, ol {
+    margin: 0 0 1rem;
+    padding: 0 15px;
 }
 
-ol {
-    margin: 0;
-    padding: 0;
-}

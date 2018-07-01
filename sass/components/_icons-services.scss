@@ -1,9 +1,11 @@
 .service-icons-block {
     > div {
-        padding-top: 2rem;
         @extend .fas;
-        font-size: $h1-font-size;
-        text-align: center;
+        font-size: $site-title-font-size;
+        text-align: center; 
+        &:hover {
+            color: $opcan-green;
+        }
     }
     .layout-column-1 {
         &::before {
@@ -21,5 +23,9 @@
         &::before {
             content: $fa-var-graduation-cap;
         }
+    }
+
+    h3 {
+        padding-top: 2rem;
     }
 }
