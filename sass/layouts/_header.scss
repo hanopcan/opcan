@@ -3,6 +3,7 @@
 
 .navbar {
   padding: 0;
+  border-bottom: 2px solid $opcan-offwhite;
 
   @include media-breakpoint-up(md) {
     @include rem(height, 170px);

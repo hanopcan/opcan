@@ -20,9 +20,11 @@
 @import "components/navigation";
 @import "components/icons";
 @import "components/buttons";
+@import "components/slider-revolution";
 
 
 // Custom layouts
 @import "layouts/header"; 
 @import "layouts/footer"; 
 @import "layouts/page-wrapper";
+@import "layouts/home";

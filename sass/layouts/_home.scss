@@ -1,0 +1,17 @@
+
+.home #page-wrapper {
+  padding-top: 0rem;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 0rem;
+  }
+
+  article {
+    padding-top: 2rem;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 3rem;
+    }
+  }
+
+}
