@@ -29,7 +29,7 @@
     }
 }
 
-.wp-block-columns .has-3-columns {
+.wp-block-columns.has-3-columns {
     > div {
         @include media-breakpoint-up(md) {
             @include make-col(4);
