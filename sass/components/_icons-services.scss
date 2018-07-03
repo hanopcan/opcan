@@ -3,7 +3,8 @@
         @extend .fas;
         font-size: $site-title-font-size;
         text-align: center; 
-        &:hover {
+        &:hover, a:hover,
+        &:active, a:active {
             color: $opcan-green;
         }
     }

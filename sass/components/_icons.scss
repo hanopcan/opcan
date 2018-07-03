@@ -3,8 +3,10 @@
     &::before {
         font-size: $h3-font-size;
     }
-    &:hover {
+    &:hover, a:hover,
+    &:active, a:active {
         color: $main_text_colour;
+        text-decoration: none;
     }
 }
 
@@ -14,5 +16,11 @@
 
     > a {
         @extend .col-4;
+        
+        &:hover, a:hover,
+        &:active, a:active {
+            color: $main_text_colour;
+            text-decoration: none;
+        }       
     }
 }

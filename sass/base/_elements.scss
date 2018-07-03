@@ -98,11 +98,14 @@ h3 {
 a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
+    color: $opcan-green;
+    font-weight: $base-font-weight-heavy;
 
     &:hover,
     &:active {
+        color: $main_text_colour;
         outline: 0;
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
 
