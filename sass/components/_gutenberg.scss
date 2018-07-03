@@ -7,12 +7,32 @@
         @include make-col(12);
         padding: 2rem;
 
-        @include media-breakpoint-up(md) {
-            @include make-col(4);
-        }
-
         p:last-child {
             margin-bottom: 0;
+        }
+    }
+}
+
+.wp-block-columns.has-2-columns {
+    > div, 
+    > figure {
+        @include media-breakpoint-up(md) {
+            @include make-col(6);
+        }
+    }
+
+    .layout-column-1 {
+        order: 1;
+    }
+    .layout-column-2 {
+        order: 2;
+    }
+}
+
+.wp-block-columns .has-3-columns {
+    > div {
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
         }
     }
 }
