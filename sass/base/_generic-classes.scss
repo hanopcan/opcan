@@ -1,3 +1,18 @@
 .bg-opcan-green {
     background-color: $opcan_green;
 }
+
+.display-only-on-larger-screens {
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+        display: block;
+    } 
+}
+
+.display-only-on-smaller-screens {
+
+    @include media-breakpoint-up(sm) {
+        display: none;;
+    } 
+}
