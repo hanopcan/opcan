@@ -1,0 +1,37 @@
+.workshops-archive-block {
+    @include make-row();
+}
+
+.workshops-archive-block-inner {
+    @include make-col(12);
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+
+    > div {
+        border: 1px solid $opcan-green;
+        @include rem(border-radius, $box-border-radius);
+        padding: 1rem;
+        text-align: center;
+        background-image: url('../img/DevelopMe_theming_picture.jpg');
+    }
+
+    h3 {
+        color: $opcan-offwhite;
+    }
+}
+
+.beginners {
+    > div {
+        background-image: url('../img/DevelopMe_intro_to_WP.jpg');
+    }
+}
+
+.theming {
+    > div {
+        background-image: url('../img/DevelopMe_theming_picture.jpg');
+    }
+}
