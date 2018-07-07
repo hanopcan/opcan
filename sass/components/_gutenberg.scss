@@ -1,11 +1,10 @@
 .wp-block-columns {
     @include make-row;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 0;
 
     > div {
         @include make-col(12);
-        padding: 2rem;
+        padding: 0;
 
         p:last-child {
             margin-bottom: 0;
@@ -21,11 +20,15 @@
         }
     }
 
-    .layout-column-1 {
+    > div:nth-child(1), .layout-column-1 {
         order: 1;
     }
-    .layout-column-2 {
+    > div:nth-child(2), .layout-column-2 {
         order: 2;
+
+        @include media-breakpoint-up(md) {
+            padding-left: 2rem;
+        }
     }
 }
 
