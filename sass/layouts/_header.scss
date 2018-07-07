@@ -3,6 +3,7 @@
 
 .navbar {
   padding: 0;
+  border-bottom: 2px solid $opcan-offwhite;
 
   @include media-breakpoint-up(md) {
     @include rem(height, 170px);
@@ -25,6 +26,10 @@
   img {
     @include rem(height, 150px);
     @include rem(width, 203px);
+
+    @include media-breakpoint-up(lg) {
+      margin-left: 2rem;
+    }
   }
 }
 
@@ -46,9 +51,9 @@
   padding-top: 1rem;
 
   @include media-breakpoint-up(md) {
+    // @extend .align-items-center;
     align-items: center !important;
     padding-top: 0;
-    // @extend .align-items-center;
   }
 
   a {

@@ -18,7 +18,8 @@ html {
 }
 
 html,
-body {
+body,
+p {
     color: $main_text_colour;
     font-family: $base-font;
     font-weight: $base-font-weight;
@@ -48,6 +49,7 @@ video {
 img {
     height: auto;
     max-width: 100%;
+    border-radius: $box-border-radius;
 }
 
 // Interactions should have pointer //
@@ -66,21 +68,21 @@ h4,
 h5,
 h6 {
     font-family: $title-font;
-    // font-weight: $base-font-weight;
-    // margin: $heading-spacing-unit;
+    font-weight: $base-font-weight;
 }
 
-// h1 {
-//     @include rem(font-size, $heading-one);
-// }
+h1 {
+    @include rem(font-size, $h1-font-size);
+}
 
-// h2 {
-//     @include rem(font-size, $heading-two);
-// }
+h2 {
+    @include rem(font-size, $h2-font-size);
+}
 
-// h3 {
-//     @include rem(font-size, $heading-three);
-// }
+h3 {
+    @include rem(font-size, $h3-font-size);
+    color: $opcan-green;
+}
 
 // h4 {
 //     @include rem(font-size, $heading-four);
@@ -98,10 +100,14 @@ h6 {
 a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
+    color: $opcan-green;
+    font-weight: $base-font-weight-heavy;
 
     &:hover,
     &:active {
+        color: $main_text_colour;
         outline: 0;
+        text-decoration: underline;
     }
 }
 
@@ -113,7 +119,7 @@ fieldset {
     ul {
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding: 0 15px;
     }
 }
 
@@ -222,58 +228,8 @@ button {
 }
 
 
-ul {
-    margin: 0;
-    padding: 0;
+ul, ol {
+    margin: 0 0 1rem;
+    padding: 0 15px;
 }
 
-ol {
-    margin: 0;
-    padding: 0;
-}
-
-// p {
-//     @include rem(margin, $vertical-spacing-unit 0);
-
-//     &:empty {
-//         margin: 0;
-//     }
-// }
-
-// blockquote,
-// q {
-//     quotes: '\201C""\201D""\2018""\2019';
-//     border-left: 10px solid $sol-pale-text;
-//     @include rem(padding-left, 10px);
-//     background-color: $sol-light-grey-bg;
-//     font-style: italic;
-//     &:before {
-//         content: open-quote;
-//     }
-
-//     &:after {
-//         content: close-quote;
-//     }
-
-//     p {
-//         display: inline;
-//     }
-// }
-
-// hr {
-//     border: 0;
-//     display: block;
-//     height: 1px;
-//     width: 100%;
-//     background-color: $sol-pale-text;
-// }
-// span {
-//     color: $black;
-// }
-// strong {
-//     font-weight: 500;
-// }
-
-// em {
-//     font-style: italic;
-// }

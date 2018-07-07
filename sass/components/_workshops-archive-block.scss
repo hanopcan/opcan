@@ -1,0 +1,42 @@
+.workshops-archive-block {
+    @include make-row();
+}
+
+.workshops-archive-block-inner {
+    @include make-col(12);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+
+    > div {
+        @include rem(border-radius, $box-border-radius);
+        padding: 0 1rem 1rem;
+        text-align: center;
+        background-image: url('../img/DevelopMe_theming_picture.jpg');
+        height: 300px;
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .justify-content-end;
+    }
+
+    h3 {
+        color: $opcan-offwhite;
+        padding: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.beginners {
+    > div {
+        background-image: url('../img/DevelopMe_intro_to_WP.jpg');
+    }
+}
+
+.theming {
+    > div {
+        background-image: url('../img/Han_working_with_student.jpg');
+    }
+}

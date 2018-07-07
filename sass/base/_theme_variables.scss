@@ -26,18 +26,31 @@ $title-font: 'Museo', sans-serif;
 
 $base-font-size: 16px;
 
+$site-title-font-size: 44px;
+$h1-font-size: 34px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+
 $navigation-font-size-small: 18px;
 $navigation-font-size-medium: 20px;
 
-$site-title-font-size: 44px;
-$h1-font-size: 34px;
+$testimonial-mobile-size: 14px;
 
 $base-font-weight: 300;
 $base-font-weight-heavy: 500;
 
-// Breakpoint sizes
+// Useful widths and heights
 // ------------------------------------------------
-$small: 576px;
-$medium: 768px;
-$large: 992px;
-$xlarge: 1200px;
+$footer-container-width: 540px;
+$footer-height: 180px;
+
+$box-border-radius: 10px;
+
+/* FOR EASY REMINDER OF BOOTSTRAP SIZES */
+// $small: 576px;
+// $medium: 768px;
+// $large: 992px;
+// $xlarge: 1200px;
+

@@ -1,0 +1,32 @@
+
+
+#page-wrapper {
+  z-index: 1;
+  position: relative;
+  @include rem(margin-bottom, $footer-height);
+  background-color: white;
+  // padding-top: 2rem;
+
+  // @include media-breakpoint-up(md) {
+  //   padding-top: 3rem;
+  // }
+
+  article {
+
+
+    @include media-breakpoint-up(md) {
+      // padding-bottom: 3rem;
+    }
+  }
+}
+
+
+#main {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+}

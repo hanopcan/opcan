@@ -1,14 +1,4 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package understrap
- */
 
 get_header();
 
@@ -40,7 +30,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<?php endwhile; // end of the loop. ?>
 
+				<?php get_template_part( 'partials/learn/workshops-archive-block' ); ?>
+
+				<?php get_template_part( 'partials/custom-loops/talks-future' ); ?>
+
+				<?php get_template_part( 'partials/learn/bristol-wordpress' ); ?>
+
 			</main><!-- #main -->
+
 
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
@@ -50,7 +47,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	</div><!-- Container end -->
 
 	<?php get_template_part('/partials/footers/footer-contact-cta'); ?>
-
 
 </div><!-- Wrapper end -->
 

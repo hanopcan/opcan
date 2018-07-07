@@ -1,0 +1,26 @@
+.icon {
+    color: $opcan_offwhite;
+    &::before {
+        font-size: $h3-font-size;
+    }
+    &:hover, a:hover,
+    &:active, a:active {
+        color: $main_text_colour;
+        text-decoration: none;
+    }
+}
+
+.social-media-icons {
+    @extend .row;
+    margin: 1rem 0 0;
+
+    > a {
+        @extend .col-4;
+        
+        &:hover, a:hover,
+        &:active, a:active {
+            color: $main_text_colour;
+            text-decoration: none;
+        }       
+    }
+}

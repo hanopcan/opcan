@@ -1,0 +1,33 @@
+.btn {
+    @include rem (font-size, $h5-font-size);
+    font-family: $base-font;
+
+    .icon::before {
+        @include rem (font-size, $h5-font-size);
+    }
+}
+
+.btn-primary {
+    border: 1px solid $opcan-green;
+    background-color: $opcan-green;
+    color: $opcan-offwhite;
+    &:hover {
+        background-color: $background_colour;
+        border: 1px solid $opcan_borders;
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid $opcan-offwhite;
+    color: $opcan-offwhite;
+    &:hover {
+        background-color: $opcan-offwhite;
+        color: $opcan-green;
+
+        .icon {
+            color: $opcan-green;
+        }
+    }
+}
+

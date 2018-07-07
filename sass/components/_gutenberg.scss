@@ -1,0 +1,52 @@
+.wp-block-columns {
+    @include make-row;
+    margin: 0;
+
+    > div {
+        @include make-col(12);
+        padding: 0;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.wp-block-columns.has-2-columns {
+    > div, 
+    > figure {
+        @include media-breakpoint-up(md) {
+            @include make-col(6);
+        }
+    }
+
+    > div:nth-child(1), .layout-column-1 {
+        order: 1;
+    }
+    > div:nth-child(2), .layout-column-2 {
+        order: 2;
+
+        @include media-breakpoint-up(md) {
+            padding-left: 2rem;
+        }
+    }
+}
+
+.wp-block-columns.has-3-columns {
+    > div {
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+        }
+    }
+}
+
+.text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.wp-block-separator {
+    max-width: none;
+    border-bottom: 1px solid $opcan_borders;
+    margin: 3rem 0;
+}

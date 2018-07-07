@@ -11,24 +11,16 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+		<footer class="site-footer" id="colophon">
 
-			<div class="col-md-12">
+			<?php get_template_part('/partials/footers/footer'); ?>
 
-				<footer class="site-footer" id="colophon">
-
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
+		</footer><!-- #colophon -->
 
 	</div><!-- container end -->
 

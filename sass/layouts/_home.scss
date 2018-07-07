@@ -1,0 +1,13 @@
+
+.home #main {
+  margin-top: 0rem;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0rem;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+}

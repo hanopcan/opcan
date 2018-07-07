@@ -1,0 +1,32 @@
+.service-icons-block {
+    > div {
+        @extend .fas;
+        font-size: $site-title-font-size;
+        text-align: center; 
+        &:hover, a:hover,
+        &:active, a:active {
+            color: $opcan-green;
+        }
+    }
+    .layout-column-1 {
+        &::before {
+            content: $fa-var-code;
+        }
+    }
+
+    .layout-column-2 {
+        &::before {
+            content: $fa-var-users;
+        }
+    }
+
+    .layout-column-3 {
+        &::before {
+            content: $fa-var-graduation-cap;
+        }
+    }
+
+    h3 {
+        padding-top: 2rem;
+    }
+}

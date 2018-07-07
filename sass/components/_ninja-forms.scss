@@ -1,0 +1,14 @@
+.nf-form-cont {
+    .nf-field-label {
+        font-family: $title-font;
+        font-weight: $base-font-weight;
+    }
+    .field-wrap input[type="button"] {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+}
+
+.nf-form-content {
+    padding-top: 2rem;
+}
