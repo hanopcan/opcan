@@ -1,5 +1,6 @@
 .btn {
     @include rem (font-size, $h5-font-size);
+    font-family: $base-font;
 
     .icon::before {
         @include rem (font-size, $h5-font-size);
