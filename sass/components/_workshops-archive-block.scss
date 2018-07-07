@@ -12,15 +12,20 @@
     }
 
     > div {
-        border: 1px solid $opcan-green;
         @include rem(border-radius, $box-border-radius);
         padding: 1rem;
         text-align: center;
         background-image: url('../img/DevelopMe_theming_picture.jpg');
+        height: 300px;
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .justify-content-end;
     }
 
     h3 {
         color: $opcan-offwhite;
+        padding: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 

@@ -7,6 +7,7 @@
  */
 
 build_cpt('page', 'testimonial', 'testimonials', false, false, 'dashicons-testimonial');
+build_cpt('page', 'talk', 'talks', false, false, 'dashicons-megaphone');
 
 
 function build_cpt($type, $singular, $plural, $tags = false, $categories = false, $icon = 'dashicons-admin-page')
@@ -102,3 +103,41 @@ function build_cpt($type, $singular, $plural, $tags = false, $categories = false
         )
     );
 }
+
+
+/* leaving this in just in case I need to look at the old talks posts
+   there's potentially a lot of useful content that could be made use of */
+function create_custom_post_type_talks(){
+    $labels = array(
+        'name' => 'Talks',
+        'singular_name' => 'Talk',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Talk',
+        'edit_item' => 'Edit Talk',
+        'new_item' => 'New Talk',
+        'view_item' => 'View Talk',
+        'search_items' => 'Search Talks',
+        'not_found' => 'No Talks found',
+        'not_found_in_trash' => 'No Talks found in Trash',
+        'parent_item_colon' => '',
+    );
+    
+    $args = array(
+        'label' => __('Talks'),
+        'labels' => $labels, // from array above
+        'public' => true,
+        'can_export' => true,
+        'show_ui' => true,
+        '_builtin' => false,
+        'capability_type' => 'post',
+        'menu_icon' => 'dashicons-megaphone', // from this list
+        'hierarchical' => false,
+        'rewrite' => array( "slug" => "talks" ), // defines URL base
+        'supports'=> array('title', 'thumbnail', 'editor', 'excerpt'),
+        'show_in_nav_menus' => true,
+        'taxonomies' => array( 'post_tag'), // own categories
+        'has_archive' => true
+    );
+    register_post_type('talks', $args);
+}
+//add_action('init','create_custom_post_type_talks');

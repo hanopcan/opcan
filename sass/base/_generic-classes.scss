@@ -16,3 +16,8 @@
         display: none;;
     } 
 }
+
+.date {
+    @include rem(font-size, $h4-font-size);
+    font-weight: $base-font-weight-heavy;
+}
