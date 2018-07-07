@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="hello-again">
-        <img src="<?php echo get_stylesheet_directory(); ?>/img/Han_says_hello_again.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/Han_says_hello_again.png">
     </div>
 
     <div class="footer-connect">
