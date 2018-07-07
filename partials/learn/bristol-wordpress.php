@@ -5,7 +5,7 @@
 
 		<div class="col-12 col-md-6">
 
-			<p>We are a friendly, approachable and free community for everyone who works with WordPress.</p>
+			<p>We are a friendly, approachable and free community for everyone who works with WordPress in Bristol and the surrounding area.</p>
 
 			<a href="https://wpbristol.co.uk" target="_blank" rel="noopener">
 				<button class="btn btn-primary my-3">Visit our website <span class="icon fas fa-arrow-right"></span></button>
