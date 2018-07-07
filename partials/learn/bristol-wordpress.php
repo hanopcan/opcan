@@ -15,7 +15,7 @@
 
 		<div class="col-12 col-md-6">
 
-			<img class="alignnone wp-image-475 size-large" src="http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group-1024x768.jpg" alt="" srcset="http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group-1024x768.jpg 1024w, http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group-300x225.jpg 300w, http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group-768x576.jpg 768w, http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" width="640" height="480">
+			<img class="alignnone wp-image-475 size-large" src="<?php echo get_site_url(); ?>/wp-content/uploads/2018/05/Bristol-WP-group-1024x768.jpg" alt="" srcset="<?php echo get_site_url(); ?>/wp-content/uploads/2018/05/Bristol-WP-group-1024x768.jpg 1024w, http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group-300x225.jpg 300w, http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group-768x576.jpg 768w, http://localhost:8888/opcan/wp-content/uploads/2018/05/Bristol-WP-group.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" width="640" height="480">
 
 		</div>
 
