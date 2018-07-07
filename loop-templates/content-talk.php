@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in page.php
+ * Single post partial template.
  *
  * @package understrap
  */
@@ -13,11 +13,11 @@ $date2 = date("F j, Y", strtotime($date));
 
 	<header class="entry-header">
 
-		<h2> <?php the_field('title');?> </h2>
+		<h1> <?php the_field('title');?> </h1>
+
+		<div class="date"> <?php echo $date2;?> </div>
 
 	</header><!-- .entry-header -->
-
-	<div class="date"> <?php echo $date2;?> </div>
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
@@ -35,7 +35,7 @@ $date2 = date("F j, Y", strtotime($date));
 	</div><!-- .entry-content -->
 
 	<div class="button_container">
-	
+		
 		<?php 
 		if ( get_field('sign-up_button')) { ?>
 
@@ -49,7 +49,7 @@ $date2 = date("F j, Y", strtotime($date));
 
 	<footer class="entry-footer">
 
-		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 
