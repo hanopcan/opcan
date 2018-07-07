@@ -9,12 +9,14 @@
 @import "assets/font-awesome"; // <------- Font Awesome Icon font
 @import "assets/underscores"; // <------- Underscores media styles
 
+
 // Custom theme files //
 @import "base/theme_variables"; // ----- My variables, colours etc
 @import "base/generic-classes"; // ----- My variables, colours etc
 
 @import "base/fonts";
 @import "base/elements";
+
 
 // Custom components
 @import "components/navigation";
@@ -23,8 +25,9 @@
 @import "components/buttons";
 @import "components/slider-revolution";
 @import "components/gutenberg";
-@import "components/workshops-archive-block";
-@import "components/talks";
+@import "components/workshops-archive-block";    @include media-breakpoint-up(md) {
+    @include make-col(6);
+}
 
 
 // Custom layouts

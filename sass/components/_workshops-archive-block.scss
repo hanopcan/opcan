@@ -13,7 +13,7 @@
 
     > div {
         @include rem(border-radius, $box-border-radius);
-        padding: 0 1rem;
+        padding: 0 1rem 1rem;
         text-align: center;
         background-image: url('../img/DevelopMe_theming_picture.jpg');
         height: 300px;
