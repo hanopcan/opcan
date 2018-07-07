@@ -8,6 +8,7 @@
 
 build_cpt('page', 'testimonial', 'testimonials', false, false, 'dashicons-testimonial');
 build_cpt('page', 'talk', 'talks', false, false, 'dashicons-megaphone');
+build_cpt('page', 'project', 'projects', false, false, 'dashicons-portfolio');
 
 
 function build_cpt($type, $singular, $plural, $tags = false, $categories = false, $icon = 'dashicons-admin-page')
