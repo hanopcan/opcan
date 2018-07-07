@@ -1,5 +1,5 @@
 <section class="bristol-wordpress">	
-	<h2>I organise the Bristol WordPress group</h2>
+	<h2>Come to the Bristol WordPress group</h2>
 
 	<div class="row">
 

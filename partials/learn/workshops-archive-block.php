@@ -1,6 +1,6 @@
 <section class="workshops-archive-wrapper">
 
-    <h2>I run workshops</h2>
+    <h2>Join a workshop</h2>
 
     <div class="workshops-archive-block">
 

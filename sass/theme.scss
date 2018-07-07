@@ -25,9 +25,8 @@
 @import "components/buttons";
 @import "components/slider-revolution";
 @import "components/gutenberg";
-@import "components/workshops-archive-block";    @include media-breakpoint-up(md) {
-    @include make-col(6);
-}
+@import "components/workshops-archive-block";    
+@import "components/ninja-forms";  
 
 
 // Custom layouts

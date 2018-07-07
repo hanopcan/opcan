@@ -21,7 +21,7 @@ $today = date('Ymd');
 	if ( $the_query->have_posts() ) { ?>
 		<section class="talks-teasers">
     
-			<h2>I give talks</h2>
+			<h2>Listen to a talk</h2>
 			<p>My next talks will be:</p>
 				
 			<?php 
