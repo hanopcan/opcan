@@ -19,23 +19,19 @@ $today = date('Ymd');
     
 	// The Loop
 	if ( $the_query->have_posts() ) { ?>
-		<div class="talks-teasers my-3">
+		<section class="talks-teasers">
     
-			<h2 class="entry-title mb-4">I give talks</h2>
+			<h2>I give talks</h2>
 			<p>My next talks will be:</p>
 				
 			<?php 
 			while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				
-				<div class="talk-wrapper">
 
-						<?php get_template_part( 'partials/teasers/talks-future' ); ?>
-
-				</div>
+				<?php get_template_part( 'partials/teasers/talks-future' ); ?>
 
 			<?php endwhile; // End the loop ?> 
 
-		</div> <!-- end talks-teasers -->	
+		</section> 
          
     <?php
 	wp_reset_query(); 

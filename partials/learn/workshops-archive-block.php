@@ -1,4 +1,4 @@
-<div class="workshops-archive-wrapper">
+<section class="workshops-archive-wrapper">
 
     <h2>I run workshops</h2>
 
@@ -23,4 +23,4 @@
         </div>
     </div> <!-- end workshops-archive-block -->
 
-</div>
+</section>

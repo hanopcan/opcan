@@ -5,7 +5,7 @@
 .workshops-archive-block-inner {
     @include make-col(12);
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
 
     @include media-breakpoint-up(md) {
         @include make-col(6);
@@ -13,7 +13,7 @@
 
     > div {
         @include rem(border-radius, $box-border-radius);
-        padding: 1rem;
+        padding: 0 1rem;
         text-align: center;
         background-image: url('../img/DevelopMe_theming_picture.jpg');
         height: 300px;

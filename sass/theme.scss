@@ -23,8 +23,8 @@
 @import "components/buttons";
 @import "components/slider-revolution";
 @import "components/gutenberg";
-@import "components/article";
 @import "components/workshops-archive-block";
+@import "components/talks";
 
 
 // Custom layouts
@@ -32,3 +32,6 @@
 @import "layouts/footer"; 
 @import "layouts/page-wrapper";
 @import "layouts/home";
+@import "layouts/section";
+@import "layouts/article";
+@import "layouts/teaser";
