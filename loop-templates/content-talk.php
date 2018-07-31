@@ -40,7 +40,7 @@ $date2 = date("F j, Y", strtotime($date));
 		if ( get_field('sign-up_button')) { ?>
 
 			<a href="<?php the_field('sign-up_button');?>" target="_blank">
-				<div class="button"><span class="dashicons dashicons-welcome-learn-more"></span> Book your space now <span class="dashicons dashicons-arrow-right-alt2"></span></div>	 	
+				<div class="btn btn-primary"><span class="dashicons dashicons-welcome-learn-more"></span> Book space now <span class="dashicons dashicons-arrow-right-alt2"></span></div>	 	
 			</a>
 
 		<?php } ?>

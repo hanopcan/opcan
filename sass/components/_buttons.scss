@@ -1,6 +1,8 @@
 .btn {
     @include rem (font-size, $h5-font-size);
+    @include rem (line-height, $h5-font-size);
     font-family: $base-font;
+    padding: 12px 20px;
 
     .icon::before {
         @include rem (font-size, $h5-font-size);
