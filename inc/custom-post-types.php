@@ -141,4 +141,4 @@ function create_custom_post_type_talks(){
     );
     register_post_type('talks', $args);
 }
-add_action('init','create_custom_post_type_talks');
+//add_action('init','create_custom_post_type_talks');
