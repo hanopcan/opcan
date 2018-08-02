@@ -1,7 +1,10 @@
 .single-talk {
+    .entry-content {
+        // padding-top: 3rem;
+    }
     #content img {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        // padding-top: 2rem;
+        margin-bottom: 2rem;
         border-radius: $box-border-radius;
     }
 }
