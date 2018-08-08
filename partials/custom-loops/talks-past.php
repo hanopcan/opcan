@@ -6,7 +6,7 @@ $today = date('Ymd');
 		'meta_query' => array(
 			array(
 				'key'		=> 'date',
-				'compare'	=> '<=',
+				'compare'	=> '<',
 				'value'		=> $today,
 			)
 			),
