@@ -9,7 +9,7 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
@@ -43,6 +43,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	</div><!-- .row -->
 
 </div><!-- Container end -->
+
+<?php get_template_part('/partials/footers/footer-contact-cta'); ?>
 
 </div><!-- Wrapper end -->
 

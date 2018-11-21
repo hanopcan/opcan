@@ -30,17 +30,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<?php endwhile; // end of the loop. ?>
 
-				<?php get_template_part( 'partials/learn/workshops-archive-block' ); ?>
-
-				<?php get_template_part( 'partials/custom-loops/talks-future' ); ?>
-
-				<p>I've given a lot of talks over the years. Follow the link below to see a full list.</p>
-
-				<a href="past-talks/">
-					<button class="btn btn-primary">See my past talks <span class="icon fas fa-arrow-right"></span></button>
-				</a>
-
-				<?php get_template_part( 'partials/learn/bristol-wordpress' ); ?>
+				<?php get_template_part( 'partials/custom-loops/talks-past' ); ?>
 
 			</main><!-- #main -->
 
