@@ -25,7 +25,7 @@ $query_args = array(
 $the_query = new WP_Query( $query_args ); ?>
 
 <section class="talks-teasers">
-<h2>Listen to a talk</h2>
+<h2>Talks</h2>
 
 	<?php
 	// The Loop.
@@ -51,12 +51,12 @@ $the_query = new WP_Query( $query_args ); ?>
 		<?php
 	} else {
 		?>
-		<p>
+		<p>I don't have anything lined up at the moment. <a href="/contact">Get in touch</a> if you'd like to change that!</p>
 		<?php
 	}
 	?>
 
-	I've given a lot of talks over the years. Follow the link below to see a full list.</p>
+	<p>In the meantime, you can follow the link below to see a list of the talks I've given.</p>
 
 	<a href="past-talks/">
 		<button class="btn btn-primary">See my past talks <span class="icon fas fa-arrow-right"></span></button>
