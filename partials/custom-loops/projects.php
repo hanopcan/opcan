@@ -11,9 +11,6 @@ $the_query = new WP_Query( $query_args );
 // The Loop
 if ( $the_query->have_posts() ) { ?>
 	<section class="project-teasers">
-
-		<h2>WordPress examples</h2>
-		<p>Here's some of my recent work</p>
 			
 		<?php 
 		while( $the_query->have_posts() ) : $the_query->the_post(); ?>
