@@ -2,7 +2,10 @@
     > div {
         @extend .fas;
         font-size: $site-title-font-size;
-        text-align: center; 
+		text-align: center; 
+		width: 100%;
+		margin-top: 2rem;
+
         &:hover, a:hover,
         &:active, a:active {
             color: $opcan-green;
@@ -24,9 +27,14 @@
         &::before {
             content: $fa-var-graduation-cap;
         }
-    }
+	}
+	
+	button {
+		margin-bottom: 2rem;
+	}
 
     h3 {
-        padding-top: 2rem;
+		padding-top: 2rem;
+		margin-bottom: 1rem;
     }
 }
