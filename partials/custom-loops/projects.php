@@ -3,7 +3,7 @@
 $query_args = array(
 	'post_type' 	=> 'project',
 	'orderby'	=> 'meta_value_num',
-	'order'		=> 'ASC'
+	'order'		=> 'DESC',
 );
 
 $the_query = new WP_Query( $query_args );
