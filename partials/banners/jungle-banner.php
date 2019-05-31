@@ -13,7 +13,7 @@ $upload_dir_url = $upload_dir['baseurl'];
 $jungle_id    = 512; // 512 in live site, 892 on local.
 $jungle_sizes = '90vw';
 
-$wordpress_id   = 896; // 511 on local and live
+$wordpress_id   = 511; // 511 on local and live
 $wordpress_sizes = '(min-width: 992px) 90vw, 40vw';
 
 ?>
