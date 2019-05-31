@@ -13,9 +13,6 @@ $upload_dir_url = $upload_dir['baseurl'];
 $jungle_id    = 512; // 512 in live site, 892 on local.
 $jungle_sizes = '90vw';
 
-$wordpress_id   = 511; // 511 on local and live
-$wordpress_sizes = '(min-width: 992px) 90vw, 40vw';
-
 ?>
 
 <div class="banner">
@@ -29,7 +26,7 @@ $wordpress_sizes = '(min-width: 992px) 90vw, 40vw';
 			<p>make the most of</p>
 	
 			<div class="banner__text--wplogo">
-				<img src="<?php echo esc_html( $upload_dir_url ); ?>/2019/03/WordPress-logotype-standard-white.png">
+				<img src="<?php echo esc_html( $upload_dir_url ); ?>/2018/07/WordPress-logotype-standard-white.png">
 			</div>
 		</div>
 
