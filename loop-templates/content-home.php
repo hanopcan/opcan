@@ -7,7 +7,7 @@
 
 ?>
 
-<?php echo do_shortcode( '[rev_slider alias="home"]' ); ?>
+<?php get_template_part( 'partials/banners/jungle-banner' ); ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 

@@ -75,4 +75,6 @@ require get_template_directory() . '/inc/editor.php';
 
 require get_template_directory() . '/inc/custom-post-types.php';
 
+require get_template_directory() . '/inc/images.php';
+
 require get_template_directory() . '/inc/shortcodes.php';

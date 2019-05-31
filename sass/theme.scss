@@ -2,7 +2,6 @@
 @import 'utils/mixins/rem';
 @import 'utils/mixins/clearfix';
 @import 'utils/mixins/accessible-hide';
-@import 'utils/mixins/breakpoint';
 
 @import "assets/bootstrap4"; // <--------- Loads Bootstrap4. 
 @import "understrap/understrap"; // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
@@ -28,6 +27,7 @@
 @import "components/workshops-archive-block";    
 @import "components/ninja-forms";  
 @import "components/twitter-embed";  
+@import "components/banners";  
 
 
 // Custom layouts
