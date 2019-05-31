@@ -26,7 +26,7 @@ $jungle_sizes = '90vw';
 			<p>make the most of</p>
 	
 			<div class="banner__text--wplogo">
-				<img src="<?php echo esc_html( $upload_dir_url ); ?>/2018/07/WordPress-logotype-standard-white.png">
+				<img src="<?php echo esc_html( $upload_dir_url ); ?>/2019/05/WordPress-logotype-standard-white.png">
 			</div>
 		</div>
 
