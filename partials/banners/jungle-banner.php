@@ -10,7 +10,7 @@ $upload_dir     = wp_upload_dir();
 $upload_dir_url = $upload_dir['baseurl'];
 
 // Generate the image sizes.
-$jungle_id    = 892; // 512 in live site, 892 on local.
+$jungle_id    = 512; // 512 in live site, 892 on local.
 $jungle_sizes = '90vw';
 
 $wordpress_id   = 896; // 511 on local and live
