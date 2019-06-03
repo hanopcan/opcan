@@ -9,7 +9,19 @@
         &:hover, a:hover,
         &:active, a:active {
             color: $opcan-green;
-        }
+		}
+		
+		@include media-breakpoint-up(md) {
+			padding: 0 2rem;
+
+			&:first-of-type {
+				padding-left: 0;
+			}
+			&:last-of-type {
+				padding-right: 0;
+			}
+		}
+
     }
     .layout-column-1 {
         &::before {
