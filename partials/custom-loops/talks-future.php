@@ -32,7 +32,7 @@ $the_query = new WP_Query( $query_args ); ?>
 	if ( $the_query->have_posts() ) {
 		?>
 
-		<p>Here are talks I've got lined up:</p>
+		<p>Here are the talks I've got lined up:</p>
 
 		<?php
 		while ( $the_query->have_posts() ) : $the_query->the_post();
@@ -56,7 +56,7 @@ $the_query = new WP_Query( $query_args ); ?>
 	}
 	?>
 
-	<p>In the meantime, you can follow the link below to see a list of the talks I've given.</p>
+	<p>If you'd like to see what I've done in the past, you can follow the link below to see a list of the talks I've given.</p>
 
 	<a href="past-talks/">
 		<button class="btn btn-primary">See my past talks <span class="icon fas fa-arrow-right"></span></button>
