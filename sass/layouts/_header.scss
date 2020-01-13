@@ -5,7 +5,12 @@
   padding: 0;
   border-bottom: 2px solid $opcan-offwhite;
 
+  @include media-breakpoint-down(sm) {
+	display: block;
+  }
+
   @include media-breakpoint-up(md) {
+	display: flex;
     @include rem(height, 170px);
   }
 }
@@ -16,21 +21,23 @@
 }
 
 .custom-logo-link {
-  margin: auto;
-  margin-top: 0.5rem;
-  @include media-breakpoint-up(md) {
-    margin: 0;
-    position: absolute;
-  }
+	width: 100%;
+	text-align: center;
 
-  img {
-    @include rem(height, 150px);
-    @include rem(width, 203px);
+	@include media-breakpoint-up(md) {
+		width: auto;
+		position: absolute;
+		top: 10px;
+	}
 
-    @include media-breakpoint-up(lg) {
-      margin-left: 2rem;
-    }
-  }
+	img {
+		@include rem(height, 150px);
+		@include rem(width, 203px);
+
+		@include media-breakpoint-up(lg) {
+			margin-left: 2rem;
+		}
+	}
 }
 
 .navbar-brand {
