@@ -17,6 +17,9 @@
 
 		<?php the_content(); ?>
 
+		<!-- Place somewhere in the <body> of your page -->
+		<?php get_template_part( 'partials/custom-loops/testimonials' ); ?>
+
 		<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
@@ -25,11 +28,5 @@
 		?>
 
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
-
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

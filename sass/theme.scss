@@ -8,6 +8,8 @@
 @import "assets/font-awesome"; // <------- Font Awesome Icon font
 @import "assets/underscores"; // <------- Underscores media styles
 
+@import "../src/sass/flexslider/flexslider.css";
+
 
 // Custom theme files //
 @import "base/theme_variables"; // ----- My variables, colours etc
@@ -28,6 +30,7 @@
 @import "components/ninja-forms";  
 @import "components/twitter-embed";  
 @import "components/banners";  
+@import "components/testimonials";
 
 
 // Custom layouts
