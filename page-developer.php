@@ -29,19 +29,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-						
-						<header class="entry-header">
+					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
 
-							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-						</header>
-
-						<?php the_content(); ?>
-
-					</article>	
-
-					<?php get_template_part( 'partials/custom-loops/projects' ); ?>
+					<?php get_template_part( 'partials/custom-loops/testimonials' ); ?>
 
 					<?php
 					// If comments are open or we have at least one comment, load up the comment template.

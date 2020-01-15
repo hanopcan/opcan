@@ -16,8 +16,7 @@
 	<div class="entry-content">
 
 		<?php the_content(); ?>
-
-		<!-- Place somewhere in the <body> of your page -->
+		
 		<?php get_template_part( 'partials/custom-loops/testimonials' ); ?>
 
 		<?php
