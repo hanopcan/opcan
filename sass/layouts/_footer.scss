@@ -3,14 +3,18 @@
 /* 3. CONTACT FOOTER               */
 
 
-
 /* 1. GENERAL, USEFUL FOOTER STUFF */
-.footer-title {
+.footer__title {
   @include rem( font-size, $h4-font-size);
   @include rem( line-height, $h4-font-size);
   text-align: center;
   color: $opcan-offwhite;
   font-family: $title-font;
+}
+
+.footer__title--small {
+	@include rem( font-size, $h5-font-size );
+	margin-bottom: 0;
 }
 
 .footer-connect {
@@ -66,9 +70,9 @@
       padding-right: 0;  
     }
 
-    .footer-title {
-      @include rem( line-height, $h4-font-size*1.5);
+    .footer__title {
+	  @include rem( line-height, $h4-font-size*1.5);
       text-align: justify;
-    }
+	}
   }
 }
