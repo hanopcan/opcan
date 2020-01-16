@@ -4,7 +4,7 @@
     </div>
 
     <div class="footer-connect">
-        <h4 class="footer__title">Connect with me</h4>
+        <h4 class="footer__title footer__title--small">Connect with me</h4>
  
         <?php get_template_part('partials/social-media-icons'); ?>
 
