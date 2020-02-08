@@ -12,7 +12,7 @@
 			
 			<h4 class="footer__title footer__title--mini">
 				<a href="https://www.websitecarbon.com/website/opcan-co-uk/" target="_blank" rel="noopener">
-					<span class="icon fas fa-tachometer mr-2"></span>Emissions check my site
+					<span class="icon icon-dashboard mr-2"></span>Emissions check my site
 				</a>
 			</h4>
 		</div>

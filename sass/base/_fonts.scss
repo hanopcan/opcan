@@ -9,6 +9,14 @@
     font-style: normal; 
 }
 
-.fab, .fas {
-    font-family: FontAwesome;
-}
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/Icomoon/icomoon.eot?bk8w2k');
+	src:  url('../fonts/Icomoon/icomoon.eot?bk8w2k#iefix') format('embedded-opentype'),
+	  url('../fonts/Icomoon/icomoon.ttf?bk8w2k') format('truetype'),
+	  url('../fonts/Icomoon/icomoon.woff?bk8w2k') format('woff'),
+	  url('../fonts/Icomoon/icomoon.svg?bk8w2k#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }

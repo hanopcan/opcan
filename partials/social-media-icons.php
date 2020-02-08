@@ -1,5 +1,5 @@
 <div class="social-media-icons">
-    <a href="https://twitter.com/hanopcan" target="_blank" rel="noopener"><div class="icon fab fa-twitter"></div></a>
-    <a href="https://www.linkedin.com/in/hanopcan/" target="_blank" rel="noopener"><div class="icon fab fa-linkedin"></div></a>
-    <a href="/contact"><div class="icon fas fa-envelope"></div></a>
+    <a href="https://twitter.com/hanopcan" target="_blank" rel="noopener"><span class="icon icon-twitter"></span></a>
+    <a href="https://www.linkedin.com/in/hanopcan/" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+    <a href="/contact"><span class="icon icon-envelope"></span></a>
 </div>    
