@@ -34,8 +34,12 @@
 		@include rem(height, 150px);
 		@include rem(width, 203px);
 
+		@include media-breakpoint-up(md) {
+			padding-left: 0.5rem;
+		}
+
 		@include media-breakpoint-up(lg) {
-			margin-left: 2rem;
+			padding-left: 2rem;
 		}
 	}
 }
@@ -43,6 +47,7 @@
 .navbar-brand {
   padding: 0;
   white-space: normal;
+  margin-right: 0;
 
   @include media-breakpoint-up(md) {
     margin: 0;

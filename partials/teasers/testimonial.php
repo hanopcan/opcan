@@ -12,7 +12,7 @@
 		<?php the_post_thumbnail( 'thumbnail' ); ?>
 	</div>
 
-	<div class="col-12 col-sm-7 col-md-8">
+	<div class="testimonial__text col-12 col-sm-7 col-md-8">
 		<?php the_content(); ?>
 	</div>
 

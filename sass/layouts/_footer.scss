@@ -1,31 +1,9 @@
-/* 1. GENERAL, USEFUL FOOTER STUFF */
-/* 2. STANDARD FOOTER              */
-/* 3. CONTACT FOOTER               */
+/* 1. STANDARD FOOTER              */
+/* 2. CONTACT FOOTER               */
+/* 3. FOOTER BOTTOM                */
 
 
-/* 1. GENERAL, USEFUL FOOTER STUFF */
-.footer__title {
-  @include rem( font-size, $h4-font-size);
-  @include rem( line-height, $h4-font-size);
-  text-align: center;
-  color: $opcan-offwhite;
-  font-family: $title-font;
-}
-
-.footer__title--small {
-	@include rem( font-size, $h5-font-size );
-	margin-bottom: 0;
-}
-
-.footer-connect {
-  @extend .d-flex;
-  @extend .flex-column;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-}
-
-
-/* 2. STANDARD FOOTER */
+/* 1. STANDARD FOOTER */
 #wrapper-footer {
   background-color: $background_colour;
   position: fixed;
@@ -49,12 +27,35 @@
 }
 
 .hello-again img{
-  width: 100%;
-  max-width: 180px;
+	width: 100%;
+	max-width: 180px;
+}
+
+.footer__title {
+	@include rem( font-size, $h4-font-size);
+	@include rem( line-height, $h4-font-size);
+	text-align: center;
+	color: $opcan-offwhite;
+	font-family: $title-font;
+
+	> a,
+	> a:hover {
+		color: $opcan-offwhite;
+	}
+}
+
+.footer__title--small {
+	@include rem( font-size, $h5-font-size );
+	margin-bottom: 0;
+}
+
+.footer__title--mini {
+	@include rem( font-size, $base-font-size );
+	margin-bottom: 0;
 }
 
 
-/* 3. CONTACT FOOTER */
+/* 2. CONTACT FOOTER */
 .footer-contact-cta {
   background-color: $opcan-green;
   padding: 1.5rem 0;
@@ -75,4 +76,29 @@
       text-align: justify;
 	}
   }
+}
+
+
+/* 3. FOOTER BOTTOM                */
+.footer-connect {
+	@extend .d-flex;
+	@extend .flex-column;
+	@extend .align-items-center;
+	@extend .justify-content-center;
+	margin-top: 1rem;
+}
+
+
+/* 4. EMISSIONS CHECK              */
+.footer__emissions-check {
+	position: relative;
+	margin-left: -40px;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+
+
+    @media screen and (min-width: 450px ) {
+		margin-left: 0;
+	}
 }
