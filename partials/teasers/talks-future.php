@@ -31,7 +31,7 @@ $date2 = date("F j, Y", strtotime($date));
 		<p> <?php the_field('where');?> </p>
 
 		<a href="<?php the_permalink(); ?>">
-			<button class="btn btn-primary my-3">Find out more <span class="icon fas fa-arrow-right"></span></button>
+			<button class="btn btn-primary my-3">Find out more <span class="icon icon-arrow-right"></span></button>
 		</a>
 
 	</header><!-- .entry-header -->

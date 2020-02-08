@@ -29,7 +29,7 @@
 
 	
 		<a href=" <?php the_field( 'site_url' ); ?>" target="_blank" rel="noopener" class="d-block">
-			<button class="btn btn-primary">See it for real <span class="icon fas fa-arrow-right"></span></button>
+			<button class="btn btn-primary">See it for real <span class="icon icon-arrow-right"></span></button>
 		</a>
 
 	</header><!-- .entry-header -->

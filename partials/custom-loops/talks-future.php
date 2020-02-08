@@ -59,7 +59,7 @@ $the_query = new WP_Query( $query_args ); ?>
 	<p>If you'd like to see what I've done in the past, you can follow the link below to see a list of the talks I've given.</p>
 
 	<a href="past-talks/">
-		<button class="btn btn-primary">See my past talks <span class="icon fas fa-arrow-right"></span></button>
+		<button class="btn btn-primary">See my past talks <span class="icon icon-arrow-right"></span></button>
 	</a>
 
 </section> 

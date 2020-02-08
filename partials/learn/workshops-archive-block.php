@@ -9,7 +9,7 @@
                 <h3>
                     WordPress for complete beginners
                 </h3>
-                <a href="https://developme.training/workshops/getting-started-with-wordpress/" target="_blank" rel="noopener"><button class="btn btn-primary">More details <span class="icon fas fa-arrow-right"></span></button></a>
+                <a href="https://developme.training/workshops/getting-started-with-wordpress/" target="_blank" rel="noopener"><button class="btn btn-primary">More details <span class="icon icon-arrow-right"></span></button></a>
             </div>
         </div>
         
@@ -18,7 +18,7 @@
                 <h3>
                     Theme development for WordPress
                 </h3>
-                <a href="https://developme.training/workshops/custom-theme-development-for-wordpress/" target="_blank" rel="noopener"><button class="btn btn-primary">More details <span class="icon fas fa-arrow-right"></span></button></a>
+                <a href="https://developme.training/workshops/custom-theme-development-for-wordpress/" target="_blank" rel="noopener"><button class="btn btn-primary">More details <span class="icon icon-arrow-right"></span></button></a>
             </div>
         </div>
     </div> <!-- end workshops-archive-block -->
