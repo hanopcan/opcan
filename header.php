@@ -21,6 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+
+	<script async defer data-domain="opcan.co.uk" src="https://plausible.io/js/plausible.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

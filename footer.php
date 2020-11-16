@@ -20,6 +20,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php get_template_part('/partials/footers/footer'); ?>
 
+			<script async defer src="https://scripts.withcabin.com/hello.js"></script>
+
+			<!-- Fathom - beautiful, simple website analytics -->
+			<script src="https://cdn.usefathom.com/script.js" data-site="BTDXICFX" defer></script>
+			<!-- / Fathom -->
+
 		</footer><!-- #colophon -->
 
 	</div><!-- container end -->
