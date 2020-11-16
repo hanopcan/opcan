@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 
-	<script async defer data-domain="opcan.co.uk" src="https://plausible.io/js/plausible.js"></script>
+	<script async defer data-domain="opcan.co.uk" src="https://plausible.io/js/plausible.outbound-links.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
