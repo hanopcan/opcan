@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php get_template_part('/partials/footers/footer'); ?>
 
-			<script async defer src="https://scripts.withcabin.com/hello.js"></script>
+			<script defer src="https://scripts.withcabin.com/hello.js"></script>
 
 		</footer><!-- #colophon -->
 
