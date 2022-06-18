@@ -1,0 +1,18 @@
+{
+	"version":1,
+	"settings": {
+		"layout": {
+			"contentSize": "1140px",
+			"wideSize": "1400px",
+			"units": [ "px", "em", "rem", "%", "vw" ]
+		},
+		"spacing": {
+            "blockGap": true
+        }
+	},
+	"styles": {
+		"spacing": {
+			"blockGap": "3rem"
+		}
+	}
+}
