@@ -22,12 +22,10 @@ $jungle_sizes = '90vw';
 		<!-- <div class="banner__overlay"> </div> -->
 
 		<div class="banner__text">
-			<p>I help businesses</p>
-			<p>make the most of</p>
-	
-			<div class="banner__text--wplogo">
-				<img src="<?php echo esc_html( $upload_dir_url ); ?>/2019/05/WordPress-logotype-standard-white.png">
-			</div>
+			<p>I help people<br/>
+			create and use<br/>
+			digital technologies</br>
+			more sustainably</p>
 		</div>
 
 	</div>  
