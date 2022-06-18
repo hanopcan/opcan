@@ -11,27 +11,30 @@ $the_query = new WP_Query( $query_args );
 // The Loop
 if ( $the_query->have_posts() ) { ?>
 
-	<h2>Is she for real?</h2>
+	<div class="testimonials">
 
-	<p>Don’t just take my word for it! Here’s what some of my clients and previous colleagues have to say about working with me. More recommendations can be found on <a href="https://www.linkedin.com/in/hanopcan/" target="_blank" rel="noopener">LinkedIn profile</a>.</p>
+		<h2>Is she for real?</h2>
 
-	<div class="flexslider">
-		<ul class="slides">
+		<p>Don’t just take my word for it! Here’s what some of my clients and previous colleagues have to say about working with me. More recommendations can be found on <a href="https://www.linkedin.com/in/hanopcan/" target="_blank" rel="noopener">LinkedIn profile</a>.</p>
 
-		<?php
-		while ( $the_query->have_posts() ) :
-			$the_query->the_post();
-			?>
+		<div class="flexslider">
+			<ul class="slides">
 
-			<li>
+			<?php
+			while ( $the_query->have_posts() ) :
+				$the_query->the_post();
+				?>
 
-			<?php get_template_part( 'partials/teasers/testimonial' ); ?>
+				<li>
 
-			</li>
+				<?php get_template_part( 'partials/teasers/testimonial' ); ?>
 
-		<?php endwhile; // End the loop ?> 
+				</li>
 
-		</ul>
+			<?php endwhile; // End the loop ?> 
+
+			</ul>
+		</div>
 	</div>
 		
 	<?php
