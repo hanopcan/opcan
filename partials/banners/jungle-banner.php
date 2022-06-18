@@ -19,13 +19,11 @@ $jungle_sizes = '90vw';
 	<div class="banner__image">
 		<?php opcan_output_responsive_image_markup( $jungle_id, $jungle_sizes ); ?>
 
-		<!-- <div class="banner__overlay"> </div> -->
-
 		<div class="banner__text">
-			<p>I help people<br/>
+			<h1>I help people<br/>
 			create and use<br/>
 			digital technologies</br>
-			more sustainably</p>
+			more sustainably</h1>
 		</div>
 
 	</div>  
