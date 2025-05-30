@@ -1,5 +1,5 @@
 module.exports = {
     "proxy": "https://opcan.local", // Change here
-    "notify": true,
+    "notify": false,
     "files": ["./assets/css/*.min.css", "./assets/js/*.min.js", "./**/*.php"]
 };
