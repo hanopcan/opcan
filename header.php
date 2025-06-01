@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-opcan bg-opcan-green">
+		<nav class="navbar navbar-expand-md navbar-opcan">
 
 			<?php the_custom_logo(); ?>
 
@@ -43,14 +43,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 		
 			<a class="navbar-brand blog-name" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-			<a class="navbar-brand blog-description" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
-
+		
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span>MENU</span>
 			</button>
 
-						<!-- The WordPress Menu goes here -->
-						<?php wp_nav_menu(
+			<a class="navbar-brand blog-description" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
+	
+			<!-- The WordPress Menu goes here -->
+			<?php wp_nav_menu(
 				array(
 					'theme_location'  => 'primary',
 					'container_class' => 'collapse navbar-collapse',
@@ -61,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 				)
 			); ?>
-			
+
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

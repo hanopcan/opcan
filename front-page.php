@@ -16,7 +16,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div id="page-wrapper">
+<div id="page-wrapper" class="has-white-to-blue-gradient-background">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 

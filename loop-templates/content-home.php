@@ -7,11 +7,11 @@
 
 ?>
 
-<?php get_template_part( 'partials/banners/jungle-banner' ); ?>
+<?php get_template_part( 'partials/banners/ds-consultant' ); ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
 

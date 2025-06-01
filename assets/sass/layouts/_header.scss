@@ -3,7 +3,7 @@
 
 .navbar {
   padding: 0;
-  border-bottom: 2px solid $opcan-offwhite;
+  border-bottom: 3px solid white;
 
   @include media-breakpoint-down(sm) {
 	display: block;
@@ -13,6 +13,10 @@
 	display: flex;
     @include rem(height, 170px);
   }
+}
+
+.navbar-opcan {
+  background-color: $opcan_accent1;
 }
 
 .navbar-expand-md > .container {
@@ -56,52 +60,51 @@
 
 .navbar-inner {
   @extend .align-self-end;
-
   @extend .d-flex;
-  @extend .flex-column;
   @extend .align-items-start;
   padding-top: 1rem;
+  padding-bottom: 0.25rem;
 
   @include media-breakpoint-up(md) {
-    // @extend .align-items-center;
+    flex-direction: column;
     align-items: center !important;
     padding-top: 0;
   }
 
   a {
-    color: $opcan_offwhite;
+    color: $main_text_colour;
   }
 
   .blog-name {
     text-transform: uppercase;
-    @include rem(font-size, $h1-font-size);
-    @include rem(line-height, $h1-font-size);
     font-family: $title-font;
+    font-size: var(--wp--preset--font-size--x-large);
+    line-height: 1.2;
     margin-right: 0;
+    color: white;  	
+    text-shadow: 2px 4px 3px rgba(21,87,99,0.6);
 
     @include media-breakpoint-up(sm) {
-      @include rem(font-size, $site-title-font-size);
-      @include rem(line-height, $site-title-font-size);
+
     }
   }
 
   .blog-description {
     color: $main_text_colour;
-    width: 75%;
-    @include rem(max-width, 220px);
-    padding-top: 0.5rem;
+    //padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-weight: $base-font-weight-heavy;
     @include rem(font-size, $navigation-font-size-small);
+    
 
     @include media-breakpoint-up(sm) {
-      max-width: none;
       @include rem(letter-spacing, 0.15px);
       @include rem(font-size, $navigation-font-size-medium);
     }
 
     @include media-breakpoint-up(md) {
       width: auto;
+      order: 1;
     }
   }
 }

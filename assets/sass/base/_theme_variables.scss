@@ -5,17 +5,29 @@
 
 // Colour palette
 // ------------------------------------------------
-$main_text_colour: #161d12;
+$main_text_colour: #1C1E20;
 $headers_text_colour: #626b6c;
 
-$background_colour: #7b7e78;
+$background_colour: #E1EFFE;
 $opcan_borders: #e0e1e2;
 
-$opcan_offwhite: #fafaf9;
+$opcan_offwhite: #F7F9FB;
 
 $opcan_green: #597346;
 $opcan_medium_green: #6e855d;
 $opcan_light_green: #c1cbba;
+
+$opcan_accent1: #2BAFC5;
+
+.has-white-to-blue-gradient-background {
+	background: hsla(211, 94%, 94%, 1);
+
+    background: linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
+
+    background: -moz-linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
+
+    background: -webkit-linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
+}
 
 
 // Font variables
@@ -25,18 +37,10 @@ $base-font: 'Montserrat', serif;
 $title-font: 'Museo', sans-serif;
 
 $base-font-size: 16px;
+$base-line-height: 1.4;
 
 $site-title-font-size: 44px;
-$site-title-line-height: 52px;
-
 $site-title-font-size-desktop: 52px;
-$site-title-line-height-desktop: 82px;
-
-$h1-font-size: 34px;
-$h2-font-size: 30px;
-$h3-font-size: 24px;
-$h4-font-size: 20px;
-$h5-font-size: 18px;
 
 $navigation-font-size-small: 18px;
 $navigation-font-size-medium: 20px;

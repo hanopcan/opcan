@@ -7,10 +7,10 @@
 /* 1. NAV STYLING           */
 nav .menu-item {
 	a {
-		color: $opcan_green;
+		//color: $opcan_green;
 
 		@include media-breakpoint-up(md) {
-			color: $opcan_offwhite;
+			//color: $opcan_offwhite;
 		}
 	}
 }
@@ -48,15 +48,13 @@ nav .menu-item {
 
 /* 2. MOBILE MENU STUFF     */
 .navbar-toggler {
-    position: absolute;
-    @include rem(margin-top, $h1-font-size+10px);
     align-self: flex-end;
     padding: 0.5rem 0.5rem;
-    color: $opcan_offwhite;
-    border: 1px solid $opcan_offwhite;
+	margin-bottom: 0.5rem;
+    color: $main_text_colour;
+    border: 2px solid $opcan_offwhite;
 
-    @include media-breakpoint-up(sm) {
-        @include rem(margin-top, 0);
+    @include media-breakpoint-up(md) {
     }      
 }
 
@@ -67,7 +65,6 @@ nav .menu-item {
 	background-color: $opcan_offwhite;
 
 	@include media-breakpoint-down(sm) {
-		border-bottom: 2px solid $opcan_green;
 
 		.menu-item a {
 			color: $main_text_colour;
@@ -83,6 +80,7 @@ nav .menu-item {
         margin-left: auto;
         margin-right: auto;
         width: auto;
+		order: 2;
     }    
 }
 

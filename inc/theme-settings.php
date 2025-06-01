@@ -30,3 +30,15 @@ if ( ! function_exists ( 'understrap_setup_theme_default_settings' ) ) {
 		}
 	}
 }
+
+// Add theme support for gradients, and define them.
+add_theme_support(
+	'editor-gradient-presets',
+	array(
+		array(
+			'name'     => __( 'White to blue', 'tgwf' ),
+			'gradient' => 'linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%)',
+			'slug'     => 'white-to-blue',
+		),
+	)
+);
