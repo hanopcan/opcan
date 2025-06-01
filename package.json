@@ -1,6 +1,6 @@
 {
-  "name": "GWF-2020-theme",
-  "version": "1.0.0",
+  "name": "OpCanTheme",
+  "version": "2.0.0",
   "description": "Build files based on Understrap",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "js": "npm-run-all js-minify",
     "js-minify": "terser assets/js/theme.js --output assets/js/theme.min.js",
     "watch": "npm-run-all --parallel watch-run-*",
-    "watch-bs": "npm-run-all --parallel watch-run-* bs",
+    "watch-bs": "npm-run-all --parallel bs watch-run-*",
     "watch-run-css": "nodemon --watch assets/sass/ --ext scss --exec \"npm-run-all css\"",
     "watch-run-js": "nodemon --watch assets/js/ --ext js --exec \"npm-run-all js\""
   },

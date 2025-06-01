@@ -5133,7 +5133,7 @@ a.skip-link {
 
 /* FOR EASY REMINDER OF BOOTSTRAP SIZES */
 .bg-opcan-green {
-  background-color: #f20ba9;
+  background-color: #597346;
 }
 
 .display-only-on-larger-screens {
@@ -5315,13 +5315,13 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  color: #f20ba9;
+  color: #597346;
 }
 
 a {
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
-  color: #f20ba9;
+  color: #597346;
   font-weight: 500;
 }
 a:hover, a:active {
@@ -5393,7 +5393,7 @@ p + ul {
 /* 3. DROPDOWN NAV          */
 /* 1. NAV STYLING           */
 nav .menu-item a {
-  color: #f20ba9;
+  color: #597346;
 }
 @media (min-width: 768px) {
   nav .menu-item a {
@@ -5453,13 +5453,13 @@ nav .menu-item a {
 }
 @media (max-width: 767.98px) {
   #navbarNavDropdown {
-    border-bottom: 2px solid #f20ba9;
+    border-bottom: 2px solid #597346;
   }
   #navbarNavDropdown .menu-item a {
     color: #161d12;
   }
   #navbarNavDropdown .menu-item a:hover, #navbarNavDropdown .menu-item a:focus {
-    color: #f20ba9;
+    color: #597346;
   }
 }
 @media (min-width: 768px) {
@@ -5579,8 +5579,8 @@ nav .menu-item a {
 }
 
 .btn-primary, .nf-form-cont .field-wrap input[type=button], .wp-block-button__link {
-  border: 1px solid #f20ba9;
-  background-color: #f20ba9;
+  border: 1px solid #597346;
+  background-color: #597346;
   color: #fafaf9;
 }
 .btn-primary:hover, .nf-form-cont .field-wrap input[type=button]:hover, .wp-block-button__link:hover {
@@ -5595,10 +5595,10 @@ nav .menu-item a {
 }
 .btn-secondary:hover {
   background-color: #fafaf9;
-  color: #f20ba9;
+  color: #597346;
 }
 .btn-secondary:hover .icon {
-  color: #f20ba9;
+  color: #597346;
 }
 
 .button-container {
@@ -5852,7 +5852,7 @@ twitter-widget {
 
 /* 2. CONTACT FOOTER */
 .footer-contact-cta {
-  background-color: #f20ba9;
+  background-color: #597346;
   padding: 1.5rem 0;
 }
 .footer-contact-cta .footer-contact-cta-inner {
