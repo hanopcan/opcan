@@ -22,11 +22,8 @@ $opcan_accent1-light: #5EC4D6;
 
 .has-white-to-blue-gradient-background {
 	background: hsla(211, 94%, 94%, 1);
-
     background: linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
-
     background: -moz-linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
-
     background: -webkit-linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
 }
 

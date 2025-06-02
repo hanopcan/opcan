@@ -75,14 +75,16 @@ nav .menu-item {
 	margin-right: calc(-50vw + 50%);
     width: 100vw;
 	background-color: $opcan_offwhite;
+	margin-top: 0.5rem;
 
 	@include media-breakpoint-down(sm) {
+		order: 4;
 
 		.menu-item a {
 			color: $main_text_colour;
 
 			&:hover, &:focus {
-				color: $opcan_green;
+				background: var(--wp--preset--gradient--white-to-blue);
 			}
 		}
 	}
@@ -122,6 +124,8 @@ nav .menu-item {
 
 	@include media-breakpoint-up(md) {
 		display: none;
+		//padding-top: 0.5rem;
+		box-shadow: 2px 2px 2px 0px rgba( darken($opcan_accent1, 20%), 0.5);
 	}
 
 	li a {
@@ -132,6 +136,12 @@ nav .menu-item {
 
 		@include media-breakpoint-up(md) {
 			color: $main_text_colour;
+			padding: 0.75rem 3rem 0.75rem 1.5rem;
+			border-radius: 0.25rem;
+
+			&:hover, &:focus {
+				background: linear-gradient(135deg, hsla(211, 94%, 94%, 1) 40%, hsla(0, 0%, 100%, 1) 100%);
+			}
 		}
 	}
 }
