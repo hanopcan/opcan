@@ -34,40 +34,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-opcan">
+		<nav class="container navbar navbar-expand-md navbar-opcan">
 
 			<?php the_custom_logo(); ?>
 
-			<?php if ( 'container' == $container ) : ?>
-				<div class="container navbar-inner">
-			<?php endif; ?>
-		
-			<a class="navbar-brand blog-name" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-		
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span>MENU</span>
-			</button>
 
-			<a class="navbar-brand blog-description" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
-	
-			<!-- The WordPress Menu goes here -->
-			<?php wp_nav_menu(
-				array(
-					'theme_location'  => 'primary',
-					'container_class' => 'collapse navbar-collapse',
-					'container_id'    => 'navbarNavDropdown',
-					'menu_class'      => 'navbar-nav',
-					'fallback_cb'     => '',
-					'menu_id'         => 'main-menu',
-					'walker'          => new understrap_WP_Bootstrap_Navwalker(),
-				)
-			); ?>
+				<div class="navbar-inner">
+		
+					<a class="navbar-brand blog-name" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
-			<?php if ( 'container' == $container ) : ?>
+					<a class="navbar-brand blog-description" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' ); ?></a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span>MENU</span>
+					</button>
+
+					<!-- The WordPress Menu goes here -->
+					<?php wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu',
+							'walker'          => new understrap_WP_Bootstrap_Navwalker(),
+						)
+					); ?>
+
+
 			</div><!-- .container -->
-			<?php endif; ?>
-
-
 
 		</nav><!-- .site-navigation -->
 

@@ -1,22 +1,32 @@
 /* Header bar across all pages
    Controls layout of logo, site title and site description */
 
+.wrapper-navbar {
+  background-color: $opcan_accent1;
+  background: linear-gradient(0deg, $opcan_accent1-light 0%, $opcan_accent1 100%); 
+    border-bottom: 3px solid white; 
+}
+
 .navbar {
-  padding: 0;
-  border-bottom: 3px solid white;
+  // padding: 0;
 
   @include media-breakpoint-down(sm) {
-	display: block;
+	//display: block;
   }
 
   @include media-breakpoint-up(md) {
-	display: flex;
-    @include rem(height, 170px);
+	  //display: flex;
+    min-height: 180px;
   }
 }
 
 .navbar-opcan {
-  background-color: $opcan_accent1;
+  padding: 1rem;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+	  justify-content: flex-start;
+  }
 }
 
 .navbar-expand-md > .container {
@@ -25,31 +35,34 @@
 }
 
 .custom-logo-link {
-	width: 100%;
+  display: block;
+  height: 100%;
+	width: auto;
 	text-align: center;
+  padding: 0;
 
 	@include media-breakpoint-up(md) {
 		width: auto;
-		position: absolute;
-		top: 10px;
+		//position: absolute;
+    // padding: 1rem 0;
 	}
 
 	img {
-		@include rem(height, 150px);
-		@include rem(width, 203px);
+		height: 100%;
+    width: auto;
+    max-height: 180px;
 
 		@include media-breakpoint-up(md) {
-			margin-left: 0.5rem;
+			//margin-left: 0.5rem;
 		}
 
 		@include media-breakpoint-up(lg) {
-			margin-left: 2rem;
+			//margin-left: 2rem;
 		}
 	}
 }
 
 .navbar-brand {
-  padding: 0;
   white-space: normal;
   margin-right: 0;
 
@@ -59,15 +72,23 @@
 }
 
 .navbar-inner {
-  @extend .align-self-end;
-  @extend .d-flex;
-  @extend .align-items-start;
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  height: 100%;
   padding-top: 1rem;
-  padding-bottom: 0.25rem;
+
+    @media (min-width: 440px) {
+		  gap: 0;
+	  }
 
   @include media-breakpoint-up(md) {
+    width: 100%;
     flex-direction: column;
-    align-items: center !important;
+    align-items: center;
+    gap: 0.25rem;
     padding-top: 0;
   }
 
@@ -76,13 +97,14 @@
   }
 
   .blog-name {
+    flex-grow: 1;
     text-transform: uppercase;
     font-family: $title-font;
     font-size: var(--wp--preset--font-size--x-large);
-    line-height: 1.2;
-    margin-right: 0;
+    line-height: 1;
+    padding: 0;
     color: white;  	
-    text-shadow: 2px 4px 3px rgba(21,87,99,0.6);
+    text-shadow: 1px 1px 3px $main_text_colour;
 
     @include media-breakpoint-up(sm) {
 
@@ -91,11 +113,13 @@
 
   .blog-description {
     color: $main_text_colour;
-    //padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     font-weight: $base-font-weight-heavy;
     @include rem(font-size, $navigation-font-size-small);
-    
+    padding: 0;
+
+    @media (min-width: 440px) {
+		  order: 2;
+	  }
 
     @include media-breakpoint-up(sm) {
       @include rem(letter-spacing, 0.15px);
