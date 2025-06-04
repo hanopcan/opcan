@@ -1,0 +1,68 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+
+// Colour palette
+// ------------------------------------------------
+$main_text_colour: #1C1E20;
+$headers_text_colour: #626b6c;
+
+$background_colour: #E1EFFE;
+$opcan_borders: #e0e1e2;
+
+$opcan_offwhite: #F7F9FB;
+
+$opcan_accent1: #2BAFC5;
+$opcan_accent1-light: #5EC4D6;
+$opcan-accent1-dark: #1b6d7b;
+
+$opcan_accent2: #597346;
+$opcan_accent2: #6e855d;
+$opcan_accent2-light: #c1cbba;
+
+.has-white-to-blue-gradient-background {
+	background: hsla(211, 94%, 94%, 1);
+    background: linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
+    background: -moz-linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
+    background: -webkit-linear-gradient(135deg, hsla(211, 94%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 70%);
+}
+
+
+// Font variables
+// ------------------------------------------------
+
+$base-font: 'Montserrat', serif;
+$title-font: 'Museo', sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+$site-title-font-size: 44px;
+$site-title-font-size-desktop: 52px;
+
+$navigation-font-size-small: 18px;
+$navigation-font-size-medium: 20px;
+
+$testimonial-mobile-size: 14px;
+
+$base-font-weight: 300;
+$base-font-weight-heavy: 500;
+
+$opcan-text-shadow: 1px 1px 3px $main_text_colour;
+
+// Useful widths and heights
+// ------------------------------------------------
+$max-reading-width: 740px;
+
+$footer-container-width: 540px;
+$footer-height: 180px;
+
+$box-border-radius: 10px;
+
+/* FOR EASY REMINDER OF BOOTSTRAP SIZES */
+// $small: 576px;
+// $medium: 768px;
+// $large: 992px;
+// $xlarge: 1200px;
+

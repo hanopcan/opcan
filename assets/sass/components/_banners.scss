@@ -1,0 +1,72 @@
+.banner {
+	display: none;
+
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+}
+
+.banner__image {
+	position: relative;
+
+	&:after {
+		background-color: rgba(0,0,0,0);
+		position: absolute;
+		content:"";
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+
+	&:hover {
+		&:after {
+			background-color: rgba(0,0,0,0.2);
+		}
+	}
+
+	img {
+		//border-radius: 0;
+		width: 100%;
+	}
+}
+
+.banner__overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;	
+	background-color: rgba(0,0,0,0.5);
+	// z-index: 1;
+
+	&:hover {
+		background-color: rgba(0,0,0,0.2);
+	}
+}
+
+.banner__text {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	@include rem(margin-top, 30px);
+	z-index: 1;
+
+	@include media-breakpoint-up(lg) {
+		@include rem(margin-top, 60px);
+	}
+
+	h1 {
+		color: white;
+		font-size: var(--wp--preset--font-size--huge);
+		text-shadow: $opcan-text-shadow;
+
+		@include media-breakpoint-up(lg) {
+		}
+	}
+}
+
+.banner__text--wplogo {
+	max-width: 500px;
+	margin: auto;
+}

@@ -74,7 +74,7 @@ function build_cpt($type, $singular, $plural, $tags = false, $categories = false
 
     $rewrite = true;
 
-    if($slug) $rewrite = array('slug'=>$slug);
+    //if($slug) $rewrite = array('slug'=>$slug);
 
     register_post_type($singular,
         array(
