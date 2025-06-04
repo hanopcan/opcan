@@ -13,7 +13,7 @@ nav .menu-item {
     } 
 
 	a {
-		//color: $opcan_green;
+		//color: $opcan_accent2;
 
 		@include media-breakpoint-up(md) {
 			//color: $opcan_offwhite;
@@ -140,7 +140,7 @@ nav .menu-item {
 			border-radius: 0.25rem;
 
 			&:hover, &:focus {
-				background: linear-gradient(135deg, hsla(211, 94%, 94%, 1) 40%, hsla(0, 0%, 100%, 1) 100%);
+				background: linear-gradient(0deg, hsla(211, 94%, 94%, 1) 40%, hsla(0, 0%, 100%, 1) 100%);
 			}
 		}
 	}
@@ -148,7 +148,7 @@ nav .menu-item {
 
 @include media-breakpoint-up(md) {
 	.dropdown-item:focus, .dropdown-item:hover {
-		background-color: $opcan_light_green;
+		background-color: $opcan_accent2-light;
 	}
 }
 

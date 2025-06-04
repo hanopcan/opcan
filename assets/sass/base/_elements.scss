@@ -82,7 +82,7 @@ h2 {
 
 h3 {
     @include rem(font-size, $h3-font-size);
-    color: $opcan-green;
+    color: $opcan_accent2;
 }
 
 // h4 {
@@ -101,7 +101,7 @@ h3 {
 a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
-    color: $opcan-green;
+    color: $opcan_accent2;
     font-weight: $base-font-weight-heavy;
 
     &:hover,

@@ -5,7 +5,8 @@
 
 /* 1. STANDARD FOOTER */
 #wrapper-footer {
-  background-color: $background_colour;
+  background-color: $opcan-accent1;
+  background: linear-gradient(180deg, $opcan_accent1-light 0%, $opcan_accent1 100%); 
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -13,6 +14,7 @@
   @include rem(height, $footer-height);
   @extend .d-flex;
   @extend .align-items-center;
+  padding-bottom: 1.5rem;
 }
 
 .footer {
@@ -57,7 +59,7 @@
 
 /* 2. CONTACT FOOTER */
 .footer-contact-cta {
-  background-color: $opcan-green;
+  background-color: $opcan_accent2;
   padding: 1.5rem 0;
 
   .footer-contact-cta-inner {
@@ -97,8 +99,15 @@
 	display: flex;
 	align-items: flex-end;
 
-
-    @media screen and (min-width: 450px ) {
+  @media screen and (min-width: 450px ) {
 		margin-left: 0;
 	}
+
+  .icon {
+    color: $main_text_colour;
+  }
+
+  a {
+    color: $main_text_colour;
+  }
 }

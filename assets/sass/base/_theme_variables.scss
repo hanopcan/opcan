@@ -13,12 +13,13 @@ $opcan_borders: #e0e1e2;
 
 $opcan_offwhite: #F7F9FB;
 
-$opcan_green: #597346;
-$opcan_medium_green: #6e855d;
-$opcan_light_green: #c1cbba;
-
 $opcan_accent1: #2BAFC5;
 $opcan_accent1-light: #5EC4D6;
+$opcan-accent1-dark: #1b6d7b;
+
+$opcan_accent2: #597346;
+$opcan_accent2: #6e855d;
+$opcan_accent2-light: #c1cbba;
 
 .has-white-to-blue-gradient-background {
 	background: hsla(211, 94%, 94%, 1);
@@ -47,6 +48,8 @@ $testimonial-mobile-size: 14px;
 
 $base-font-weight: 300;
 $base-font-weight-heavy: 500;
+
+$opcan-text-shadow: 1px 1px 3px $main_text_colour;
 
 // Useful widths and heights
 // ------------------------------------------------

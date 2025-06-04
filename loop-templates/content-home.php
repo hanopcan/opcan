@@ -7,7 +7,7 @@
 
 ?>
 
-<?php get_template_part( 'partials/banners/ds-consultant' ); ?>
+<?php get_template_part( 'partials/banners/jungle-banner' ); ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 

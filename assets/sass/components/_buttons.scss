@@ -11,8 +11,8 @@
 }
 
 .btn-primary, .wp-block-button__link {
-    border: 1px solid $opcan-green;
-    background-color: $opcan-green;
+    border: 1px solid $opcan_accent2;
+    background-color: $opcan_accent2;
     color: $opcan-offwhite;
     &:hover {
         background-color: $background_colour;
@@ -26,10 +26,10 @@
     color: $opcan-offwhite;
     &:hover {
         background-color: $opcan-offwhite;
-        color: $opcan-green;
+        color: $opcan_accent2;
 
         .icon {
-            color: $opcan-green;
+            color: $opcan_accent2;
         }
     }
 }

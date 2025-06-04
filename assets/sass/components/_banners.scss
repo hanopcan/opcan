@@ -10,7 +10,7 @@
 	position: relative;
 
 	&:after {
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0);
 		position: absolute;
 		content:"";
 		top:0;
@@ -26,7 +26,8 @@
 	}
 
 	img {
-		border-radius: 0;
+		//border-radius: 0;
+		width: 100%;
 	}
 }
 
@@ -55,16 +56,12 @@
 		@include rem(margin-top, 60px);
 	}
 
-	p {
+	h1 {
 		color: white;
-		@include rem(font-size, $site-title-font-size);
-		@include rem(line-height, $site-title-line-height);
-		font-family: $title-font;
-		font-weight: $base-font-weight;
+		font-size: var(--wp--preset--font-size--huge);
+		text-shadow: $opcan-text-shadow;
 
 		@include media-breakpoint-up(lg) {
-			@include rem(font-size, $site-title-font-size-desktop);
-			@include rem(line-height, $site-title-line-height-desktop);
 		}
 	}
 }
