@@ -21,35 +21,50 @@ $today = date('Ymd');
 
 		<p> <?php the_field( 'where' ); ?> </p>
 
-		<?php if ( get_field ( 'slides' ) ||  get_field ( 'video' ) ) : ?>
-			<div class="button-container">
-
-				<?php if ( get_field ( 'slides' ) ) : ?>
-					<a href="<?php the_field( 'slides' ); ?>" class="btn">View slides</a>
-				<?php endif; ?>		
-
-				<?php if ( get_field ( 'video' ) ) : ?>
-					<a href="<?php the_field( 'video' ); ?>" class="btn">Watch video</a>
-				<?php endif; ?>	
-
-			</div>
-		<?php endif; ?>		
-
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 
 		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-		<?php if ( $date > $today ) { ?>
+		<h2>Talk synopsis</h2>
 
-			<?php the_content(); ?>
+		<?php the_content(); ?>
 
-		<?php } else { ?>
+		<div class="button_container">
+			<?php 
+			if ( get_field('sign-up_button')) { ?>
 
-			<p><?php the_field( 'post_event_write-up' ); ?></p>
+				<a class="btn icon icon-arrow-right" href="<?php the_field('sign-up_button');?>" target="_blank">
+					<span>Visit event website for more info</span>
+				</a>
+			<?php } ?>
+		</div>
 
-		<?php } ?>
+		<?php
+		if ( !empty( $write_up = get_field( 'post_event_write-up' ) ) ) {
+			?>
+			<h2 class="mt-5">Event write-up</h2>
+
+			<?php if ( get_field ( 'slides' ) ||  get_field ( 'video' ) ) : ?>
+				<div class="button-container">
+
+					<?php if ( get_field ( 'slides' ) ) : ?>
+						<a href="<?php the_field( 'slides' ); ?>" class="btn">View slides</a>
+					<?php endif; ?>		
+
+					<?php if ( get_field ( 'video' ) ) : ?>
+						<a href="<?php the_field( 'video' ); ?>" class="btn">Watch video</a>
+					<?php endif; ?>	
+
+				</div>
+			<?php endif; ?>		
+
+			<?php echo $write_up; ?>
+
+			<?php
+		}
+		?>
 
 		<?php
 		wp_link_pages( array(
@@ -59,19 +74,6 @@ $today = date('Ymd');
 		?>
 
 	</div><!-- .entry-content -->
-
-	<div class="button_container">
-		
-		<?php 
-		if ( get_field('sign-up_button')) { ?>
-
-			<a href="<?php the_field('sign-up_button');?>" target="_blank">
-				<div class="btn"><span class="dashicons dashicons-welcome-learn-more"></span> Book space now <span class="dashicons dashicons-arrow-right-alt2"></span></div>	 	
-			</a>
-
-		<?php } ?>
-
-	</div>
 
 	<footer class="entry-footer">
 
