@@ -29,8 +29,8 @@ $date2 = date("F j, Y", strtotime($date));
 
 		<p> <?php the_field('where');?> </p>
 
-		<a href="<?php the_permalink(); ?>">
-			<button class="btn btn-primary my-3">See write up <span class="icon icon-arrow-right"></span></button>
+		<a class="btn my-3 icon icon-arrow-right" href="<?php the_permalink(); ?>">
+			<span>See write up</span>
 		</a>
 
 	</section><!-- section -->

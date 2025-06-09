@@ -25,11 +25,11 @@ $today = date('Ymd');
 			<div class="button-container">
 
 				<?php if ( get_field ( 'slides' ) ) : ?>
-					<a href="<?php the_field( 'slides' ); ?>" class="btn btn-primary">View slides</a>
+					<a href="<?php the_field( 'slides' ); ?>" class="btn">View slides</a>
 				<?php endif; ?>		
 
 				<?php if ( get_field ( 'video' ) ) : ?>
-					<a href="<?php the_field( 'video' ); ?>" class="btn btn-primary">Watch video</a>
+					<a href="<?php the_field( 'video' ); ?>" class="btn">Watch video</a>
 				<?php endif; ?>	
 
 			</div>
@@ -66,7 +66,7 @@ $today = date('Ymd');
 		if ( get_field('sign-up_button')) { ?>
 
 			<a href="<?php the_field('sign-up_button');?>" target="_blank">
-				<div class="btn btn-primary"><span class="dashicons dashicons-welcome-learn-more"></span> Book space now <span class="dashicons dashicons-arrow-right-alt2"></span></div>	 	
+				<div class="btn"><span class="dashicons dashicons-welcome-learn-more"></span> Book space now <span class="dashicons dashicons-arrow-right-alt2"></span></div>	 	
 			</a>
 
 		<?php } ?>

@@ -1,6 +1,6 @@
 .icon {
     color: $opcan_offwhite;
-    &::before {
+    &::after {
         font-size: $h3-font-size;
     }
     &:hover, a:hover,

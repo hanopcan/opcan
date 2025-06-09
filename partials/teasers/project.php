@@ -28,8 +28,8 @@
 		<?php the_content(); ?>
 
 	
-		<a href=" <?php the_field( 'site_url' ); ?>" target="_blank" rel="noopener" class="d-block">
-			<button class="btn btn-primary">See it for real <span class="icon icon-arrow-right"></span></button>
+		<a class="btn d-block icon icon-arrow-right" href=" <?php the_field( 'site_url' ); ?>" target="_blank" rel="noopener">
+			<span>See it for real</span>
 		</a>
 
 	</header><!-- .entry-header -->

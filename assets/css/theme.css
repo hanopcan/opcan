@@ -1281,30 +1281,30 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-.btn-primary, .nf-form-cont .field-wrap input[type=button] {
+.btn-primary {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:hover, .nf-form-cont .field-wrap input[type=button]:hover {
+.btn-primary:hover {
   color: #fff;
   background-color: rgb(0, 104.55, 216.75);
   border-color: rgb(0, 98.4, 204);
 }
-.btn-primary:focus, .nf-form-cont .field-wrap input[type=button]:focus, .btn-primary.focus, .nf-form-cont .field-wrap input.focus[type=button] {
+.btn-primary:focus, .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
-.btn-primary.disabled, .nf-form-cont .field-wrap input.disabled[type=button], .btn-primary:disabled, .nf-form-cont .field-wrap input[type=button]:disabled {
+.btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .nf-form-cont .field-wrap input[type=button]:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .nf-form-cont .field-wrap input[type=button]:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .nf-form-cont .field-wrap .show > input.dropdown-toggle[type=button] {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: rgb(0, 98.4, 204);
   border-color: rgb(0, 92.25, 191.25);
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .nf-form-cont .field-wrap input[type=button]:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .nf-form-cont .field-wrap input[type=button]:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .nf-form-cont .field-wrap .show > input.dropdown-toggle[type=button]:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
@@ -5202,55 +5202,55 @@ a.skip-link {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-group:before {
+.icon-group:after {
   content: "\e909";
 }
 
-.icon-edit:before {
+.icon-edit:after {
   content: "\e908";
 }
 
-.icon-pencil-square-o:before {
+.icon-pencil-square-o:after {
   content: "\e908";
 }
 
-.icon-arrow-right:before {
+.icon-arrow-right:after {
   content: "\e907";
 }
 
-.icon-dashboard:before {
+.icon-dashboard:after {
   content: "\e902";
 }
 
-.icon-tachometer:before {
+.icon-tachometer:after {
   content: "\e902";
 }
 
-.icon-graduation-cap:before {
+.icon-graduation-cap:after {
   content: "\e903";
 }
 
-.icon-mortar-board:before {
+.icon-mortar-board:after {
   content: "\e903";
 }
 
-.icon-bullhorn:before {
+.icon-bullhorn:after {
   content: "\e904";
 }
 
-.icon-code:before {
+.icon-code:after {
   content: "\e905";
 }
 
-.icon-envelope:before {
+.icon-envelope:after {
   content: "\e906";
 }
 
-.icon-linkedin:before {
+.icon-linkedin:after {
   content: "\e901";
 }
 
-.icon-twitter:before {
+.icon-twitter:after {
   content: "\e900";
 }
 
@@ -5531,7 +5531,7 @@ p + ul {
 .icon {
   color: #F7F9FB;
 }
-.icon::before {
+.icon::after {
   font-size: 1.75rem;
 }
 .icon:hover, .icon a:hover, .icon:active, .icon a:active {
@@ -5580,24 +5580,25 @@ p + ul {
 }
 
 .btn, .nf-form-cont .field-wrap input[type=button], .wp-block-button__link {
-  font-size: 1.25remrem;
-  line-height: 1.25remrem;
   font-family: "Montserrat", serif;
-  padding: 12px 20px;
+  line-height: 1;
+  padding: 1rem 1.5rem;
   border-radius: 0.25rem;
-}
-.btn .icon::before, .nf-form-cont .field-wrap input[type=button] .icon::before, .wp-block-button__link .icon::before {
-  font-size: 1.25remrem;
-}
-
-.btn-primary, .nf-form-cont .field-wrap input[type=button], .wp-block-button__link {
-  border: 1px solid #6e855d;
+  border: none;
+  min-height: 2rem;
   background-color: #6e855d;
   color: #F7F9FB;
 }
-.btn-primary:hover, .nf-form-cont .field-wrap input[type=button]:hover, .wp-block-button__link:hover {
-  background-color: #E1EFFE;
-  border: 1px solid #e0e1e2;
+.btn:hover, .nf-form-cont .field-wrap input[type=button]:hover, .wp-block-button__link:hover {
+  text-decoration: none;
+  color: #F7F9FB;
+  background-color: #1b6d7b;
+}
+.btn > span, .nf-form-cont .field-wrap input[type=button] > span, .wp-block-button__link > span {
+  font-family: "Montserrat", serif;
+}
+.btn::after, .nf-form-cont .field-wrap input[type=button]::after, .wp-block-button__link::after {
+  font-size: 1rem;
 }
 
 .btn-secondary {
@@ -5611,6 +5612,12 @@ p + ul {
 }
 .btn-secondary:hover .icon {
   color: #6e855d;
+}
+
+.btn-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .button-container {
@@ -5974,10 +5981,16 @@ twitter-widget {
     margin-left: 0;
   }
 }
-.footer__emissions-check .icon {
+.footer__emissions-check a {
   color: #1C1E20;
 }
-.footer__emissions-check a {
+.footer__emissions-check a:hover {
+  text-decoration: none;
+}
+.footer__emissions-check a:hover .icon {
+  color: #F7F9FB;
+}
+.footer__emissions-check a .icon {
   color: #1C1E20;
 }
 

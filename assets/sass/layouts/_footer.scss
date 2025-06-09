@@ -103,11 +103,19 @@
 		margin-left: 0;
 	}
 
-  .icon {
-    color: $main_text_colour;
-  }
-
   a {
     color: $main_text_colour;
+
+    &:hover {
+      text-decoration: none;
+
+      .icon {
+        color: $opcan-offwhite;
+      }
+    }
+
+    .icon {
+      color: $main_text_colour;
+    }
   }
 }
