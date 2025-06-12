@@ -5562,7 +5562,7 @@ p + ul {
 
 .service-icons-block {
   text-align: center;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 .service-icons-block div > span:before {
   font-size: 44px;
@@ -5581,14 +5581,18 @@ p + ul {
     padding-right: 0;
   }
 }
-.service-icons-block button {
-  margin-bottom: 2rem;
-}
 .service-icons-block h3 {
   margin-bottom: 1rem;
 }
 .service-icons-block h3, .service-icons-block p {
   padding-top: 0;
+  margin-block-start: 1rem;
+}
+.service-icons-block p {
+  text-align: left;
+}
+.service-icons-block .wp-block-buttons {
+  margin-bottom: 2rem;
   margin-block-start: 1rem;
 }
 
