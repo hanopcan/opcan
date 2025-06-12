@@ -5676,6 +5676,12 @@ p + ul {
     top: 0;
     width: 100%;
     z-index: 1;
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .banner__text {
+    padding-top: 4rem;
   }
 }
 .banner__text h1 {

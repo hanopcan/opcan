@@ -56,11 +56,11 @@
 		top: 0;
 		width: 100%;
 		z-index: 1;
-	
+		padding-top: 3rem;
 	}
 
 	@include media-breakpoint-up(lg) {
-		
+		padding-top: 4rem;
 	}
 
 	h1 {
