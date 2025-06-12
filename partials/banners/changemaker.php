@@ -20,8 +20,8 @@ $jungle_sizes = '90vw';
 		<?php opcan_output_responsive_image_markup( $jungle_id, $jungle_sizes ); ?>
 
 		<div class="banner__text">
-			<h1>Leading teams</br>
-			delivering</br>
+			<h1>Strategic leadership</br>
+			for teams delivering<br/>
 			impactful change</br>
 			that sticks</h1>
 		</div>
