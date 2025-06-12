@@ -1,12 +1,29 @@
 article {
-    margin-top: 2rem;
     margin-bottom: 2rem;
 
-    h1, h2, h3 {
-        margin-bottom: 2rem;
+    h1 {
+        margin-top: 2rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 4rem;
+        }
+    }
+
+    h2 {
+        margin-top: 3rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
     }
 }
 
 .entry-featured-image {
 	margin-bottom: 2rem;
+}
+
+.page-template-reading-width {
+    article {
+        @extend .max-reading-width;
+    }
 }
