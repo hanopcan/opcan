@@ -5202,6 +5202,14 @@ a.skip-link {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-earth:after {
+  content: "\e90a";
+}
+
+.icon-globe:after {
+  content: "\e90a";
+}
+
 .icon-group:after {
   content: "\e909";
 }
