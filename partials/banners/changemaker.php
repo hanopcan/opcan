@@ -22,8 +22,7 @@ $jungle_sizes = '90vw';
 		<div class="banner__text">
 			<h1>Strategic leadership</br>
 			for teams delivering<br/>
-			impactful change</br>
-			that sticks</h1>
+			impactful change</h1>
 		</div>
 
 	</div>  
