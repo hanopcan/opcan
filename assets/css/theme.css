@@ -5625,31 +5625,34 @@ p + ul {
 }
 
 .banner {
-  display: none;
-}
-@media (min-width: 768px) {
-  .banner {
-    display: block;
-  }
+  margin-top: -1.5rem;
 }
 
 .banner__image {
   position: relative;
 }
 .banner__image:after {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .banner__image:hover:after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
 }
 .banner__image img {
-  width: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .banner__image img {
+    width: 100%;
+    display: block;
+  }
 }
 
 .banner__overlay {
@@ -5664,23 +5667,32 @@ p + ul {
 }
 
 .banner__text {
-  position: absolute;
-  top: 0;
-  width: 100%;
   text-align: center;
-  margin-top: 1.875rem;
-  z-index: 1;
+  padding: 2rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .banner__text {
-    margin-top: 3.75rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
 }
 .banner__text h1 {
-  color: white;
   font-size: var(--wp--preset--font-size--huge);
   text-shadow: 1px 1px 3px #1C1E20;
 }
+@media (min-width: 768px) {
+  .banner__text h1 {
+    color: white;
+  }
+}
+@media (min-width: 992px) {
+  .banner__text h1 {
+    line-height: 1.3;
+  }
+}
+
 .banner__text--wplogo {
   max-width: 500px;
   margin: auto;

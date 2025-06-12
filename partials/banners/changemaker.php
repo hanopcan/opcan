@@ -17,10 +17,13 @@ $jungle_sizes = '90vw';
 
 <div class="banner">
 	<div class="banner__image">
-		<?php //opcan_output_responsive_image_markup( $jungle_id, $jungle_sizes ); ?>
+		<?php opcan_output_responsive_image_markup( $jungle_id, $jungle_sizes ); ?>
 
 		<div class="banner__text">
-			<h1>I'm great at getting stuff done</h1>
+			<h1>Leading teams</br>
+			delivering</br>
+			impactful change</br>
+			that sticks</h1>
 		</div>
 
 	</div>  

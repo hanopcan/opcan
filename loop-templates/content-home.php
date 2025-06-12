@@ -7,7 +7,7 @@
 
 ?>
 
-<?php get_template_part( 'partials/banners/jungle-banner' ); ?>
+<?php get_template_part( 'partials/banners/changemaker' ); ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 

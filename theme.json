@@ -63,7 +63,7 @@
 				},
 				{
 					"slug": "huge",
-					"size": "clamp(2.6rem, 7vw, 3.3rem)",
+					"size": "clamp(2.6rem, 5vw, 3.8rem)",
 					"name": "Huge"
 				}
 			]
