@@ -5529,7 +5529,7 @@ p + ul {
 }
 
 .icon {
-  color: #F7F9FB;
+  color: #1C1E20;
 }
 .icon::after {
   font-size: 1.75rem;
@@ -5543,8 +5543,13 @@ p + ul {
   margin: 0.5rem 0 1rem;
 }
 .social-media-icons > a:hover, .social-media-icons > a a:hover, .social-media-icons > a:active, .social-media-icons > a a:active {
-  color: #1C1E20;
   text-decoration: none;
+}
+.social-media-icons .icon {
+  color: #F7F9FB;
+}
+.social-media-icons .icon:hover, .social-media-icons .icon a:hover, .social-media-icons .icon:active, .social-media-icons .icon a:active {
+  color: #1C1E20;
 }
 
 .service-icons-block {

@@ -1,5 +1,6 @@
 .icon {
-    color: $opcan_offwhite;
+    color: $main_text_colour;
+    
     &::after {
         font-size: $h3-font-size;
     }
@@ -16,11 +17,19 @@
 
     > a {
         @extend .col-4;
-        
+
+        &:hover, a:hover,
+        &:active, a:active {
+            text-decoration: none;
+        }
+    }
+
+    .icon {
+        color: $opcan_offwhite;
+
         &:hover, a:hover,
         &:active, a:active {
             color: $main_text_colour;
-            text-decoration: none;
-        }       
+        }   
     }
 }
